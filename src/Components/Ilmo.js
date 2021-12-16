@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Fade, Slide } from "react-reveal";
+import Laskuri from "./Laskuri";
 
 class Ilmo extends Component {
   render() {
@@ -91,7 +92,9 @@ class Ilmo extends Component {
                 </div>
               </div>
             ) : (
-              <div>Ilmo ei ole auki vielä</div>
+              <div>
+                <Laskuri />
+              </div>
             )}
           </Slide>
         </div>
