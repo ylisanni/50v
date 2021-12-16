@@ -1,6 +1,14 @@
-# 50v juhlasaitti
+# Asteriski 50v juhlasaitti
 
-```bash
+## Run
+
+```shell
 npm i
-npm run dev
+npm start
+```
+
+## Build
+
+```shell
+npm run build
 ```

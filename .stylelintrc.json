@@ -1,8 +1,0 @@
-{
-  "extends": "stylelint-config-sass-guidelines",
-  "plugins": ["stylelint-order"],
-  "rules": {
-      "color-hex-length": false,
-      "max-nesting-depth": 4
-  }
-}
