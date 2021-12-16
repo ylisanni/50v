@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import $ from "jquery";
 import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -12,10 +11,7 @@ import Ilmo from "./Components/Ilmo";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      foo: "bar",
-      resumeData: {},
-    };
+    this.state = {};
   }
 
   componentDidMount() {}
@@ -23,13 +19,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header data={this.state.resumeData} />
-        <Tietoa data={this.state.resumeData} />
-        <Ohjelma data={this.state.resumeData} />
-        <Etiketti data={this.state.resumeData} />
-        <Sillis data={this.state.resumeData} />
-        <Ilmo data={this.state.resumeData} />
-        <Footer data={this.state.resumeData} />
+        <Header data={this.state} />
+        <Tietoa data={this.state} />
+        <Ohjelma data={this.state} />
+        <Etiketti data={this.state} />
+        <Sillis data={this.state} />
+        <Ilmo data={this.state} />
+        <Footer data={this.state} />
       </div>
     );
   }
