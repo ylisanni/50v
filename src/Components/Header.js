@@ -1,11 +1,13 @@
 import React, { Component } from "react";
 import Fade from "react-reveal";
+import ParticlesBg from "particles-bg";
 
 class Header extends Component {
   render() {
 
     return (
       <header id="home">
+        <ParticlesBg color="#fff" type="lines" bg={true} />
         <nav id="nav-wrap">
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
@@ -24,6 +26,12 @@ class Header extends Component {
             <li>
               <a className="smoothscroll" href="#tietoa">
                 Tietoa
+              </a>
+            </li>
+
+            <li>
+              <a className="smoothscroll" href="#uutiset">
+                Uutiset
               </a>
             </li>
 
@@ -65,12 +73,7 @@ class Header extends Component {
               <img
                 alt="main logo"
                 src="/images/logo-big.png"
-                className="img-fluid"
-                style={{
-                  maxWidth: "800px",
-                  maxHeight: "400px",
-                  paddingTop: "60px",
-                }}
+                className="main-logo"
               ></img>
             </Fade>
             <Fade bottom duration={1200}>

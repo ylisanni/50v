@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
+.wp-img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wp-img img {
+  border-bottom: 1px solid var(--gray-darker);
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.rotating-logo {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.rotating-logo:hover,
+.rotating-logo:focus,
+.rotating-logo:active {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.main-logo {
+  padding-top: 40px;
+}
+
+.laskuri {
+  font-family: "Major Mono Display", monospace;
+  text-align: center;
+}
+
+.laskuri-item {
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-right: 1px solid;
+}
+
+.laskuri-item-last {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.laskuri-amount {
+  color: var(--gold);
+}

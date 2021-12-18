@@ -1,15 +1,11 @@
 import React, { Component } from "react";
-import Fade from "react-reveal";
-import ParticlesBg from "particles-bg";
 
 class Sillis extends Component {
   render() {
     return (
       <section id="sillis">
-        <ParticlesBg color="#fff" type="lines" bg={true} />
-        <Fade left duration={1000} distance="40px">
           <div className="row">
-            <div className="twelve columns collapsed">
+            <div className="twelve columns">
               <h1>Sillis</h1>
               <p>
                 Hyvä juhlaväki! Naiset, herrat ja kaikki muut! Lapset ja ja
@@ -35,7 +31,6 @@ class Sillis extends Component {
               </p>
             </div>
           </div>
-        </Fade>
       </section>
     );
   }

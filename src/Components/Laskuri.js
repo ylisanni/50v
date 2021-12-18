@@ -1,26 +1,26 @@
 import React, { Component } from "react";
-import Countdown from "react-countdown";
 
 class Laskuri extends Component {
   render() {
-    const renderer = ({ days, hours, minutes, seconds, completed }) => {
-      if (completed) {
-        // Render a completed state
-        return <p>ILMO</p>;
-      } else {
-        // Render a countdown
-        return (
-          <span>
-            Ilmon aukeamiseen {days} päivää {hours} tuntia {minutes} minuuttia
-            ja {seconds} sekuntia
-          </span>
-        );
-      }
-    };
     return (
-      <>
-        <Countdown date={new Date(2022, 2, 26)} renderer={renderer} />
-      </>
+      <div className="laskuri row">
+        <div className="laskuri-item columns three">
+          <span className="laskuri-amount">{this.props.days}</span>{' '}
+          <span className="laskuri-text">päivää</span>
+        </div>
+        <div className="laskuri-item columns three">
+          <span className="laskuri-amount">{this.props.hours}</span>{' '}
+          <span className="laskuri-text">tuntia</span>
+        </div>
+        <div className="laskuri-item columns three">
+          <span className="laskuri-amount">{this.props.minutes}</span>{' '}
+          <span className="laskuri-text">minuuttia</span>
+        </div>
+        <div className="laskuri-item laskuri-item-last columns three">
+          <span className="laskuri-amount">{this.props.seconds}</span>{' '}
+          <span className="laskuri-text">sekuntia</span>
+        </div>
+      </div>
     );
   }
 }

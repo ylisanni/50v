@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Slide from "react-reveal";
 
 class Etiketti extends Component {
   getRandomColor() {
@@ -14,13 +13,13 @@ class Etiketti extends Component {
   render() {
     return (
       <section id="etiketti">
-        <Slide right duration={1000}>
-          <div className="row education">
+        <div className="row">
+          <div className="columns twelve">
             <h1>Etiketti</h1>
           </div>
-        </Slide>
-        <Slide left duration={1300}>
-          <div className="row education">
+        </div>
+        <div className="row">
+          <div className="columns twelve">
             <h2>Pukukoodi</h2>
 
             <p>
@@ -79,11 +78,7 @@ class Etiketti extends Component {
               sirkusteeman mukaista huomattavasti rennompaa vaatetusta, mitä
               rennompi ja typerämpi, sen parempi. Haalarit toimivat myös aina.
             </p>
-          </div>
-        </Slide>
 
-        <Slide left duration={1300}>
-          <div className="row work">
             <h2>Vinkkejä käyttäytymiseen</h2>
 
             <p>
@@ -110,7 +105,7 @@ class Etiketti extends Component {
               istuvan kanssa. Tyhjällä lasilla ei tule skoolata.
             </p>
           </div>
-        </Slide>
+        </div>
       </section>
     );
   }
