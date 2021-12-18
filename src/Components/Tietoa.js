@@ -20,14 +20,14 @@ class Tietoa extends Component {
               helmikuuta 2022. Vuosijuhlat alkavat cocktail-tilaisuudella, joka
               järjestetään Turun Yliopiston tiloissa Agora rakennuksen aulassa.
               Cocktail-tilaisuudesta siirrymme pääjuhlaan, joka järjestetään
-              Turun VPK-talolla ja jatkot pidetään salaisessa jatkopaikassa.
+              Turun VPK-talolla. Jatkot pidetään salaisessa jatkopaikassa.
               Matkat eri paikkojen välillä taittuu yhteisillä
               bussikuljetuksilla.
             </p>
             <p>
               Seuraavana päivänä sunnuntaina 27. helmikuuta 2022 vietetään
-              salaisessa paikassa sillistä, jonne bussikuljetukset lähtevät
-              kello X paikasta X.
+              salaisessa paikassa sillistä. Sinne bussikuljetukset lähtevät
+              kello XX:XX paikasta Y.
             </p>
             <p>
               Vuosijuhlien pukukoodina toimii juhlapuku tai tumma puku sekä

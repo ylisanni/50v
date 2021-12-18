@@ -80,7 +80,7 @@ class Header extends Component {
               <h3>
                 Tervetuloa juhlistamaan rakkaan ainejärjestömme Asteriski ry:n
                 50-vuotista taivalta lauantaina 26. helmikuuta 2022 vuosijuhlien
-                merkeissä. Vuosijuhlia ennen järjestetään vuosijuhlaviikko
+                merkeissä. Ennen vuosijuhlia järjestetään vuosijuhlaviikko
                 21.2.-24.2., jonka ohjelman löydät <a className="smoothscroll" href="#ohjelma">täältä</a>
                 .
               </h3>

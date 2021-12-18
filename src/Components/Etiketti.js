@@ -28,7 +28,7 @@ class Etiketti extends Component {
             </p>
 
             <p>
-              Juhlapuku tarkoittaa frakkia. Tumma puku on musta puku. Tumman
+              Juhlapuku tarkoittaa frakkia. Tum­ma pu­ku on musta puku. Tumman
               puvun kanssa tulee käyttää valkoista paitaa sekä vaaleaa tai
               helmiäistä yksiväristä solmiota.
             </p>
