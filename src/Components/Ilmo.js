@@ -5,6 +5,7 @@ import Laskuri from "./Laskuri";
 
 class Ilmo extends Component {
   render() {
+    if (this.props.data.lang === "en") return null;
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
       if (completed) {
         return <Ilmoformi />;

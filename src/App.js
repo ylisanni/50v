@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+
 import "./App.css";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
@@ -12,7 +13,10 @@ import Ilmo from "./Components/Ilmo";
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      lang: props.lang,
+      kutsuvieras: props.kutsuvieras,
+    };
   }
 
   componentDidMount() {}

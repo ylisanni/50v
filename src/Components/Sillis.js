@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 class Sillis extends Component {
   render() {
+    if (this.props.data.lang === "en") return null;
     return (
       <section id="sillis">
         <div className="row">

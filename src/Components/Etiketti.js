@@ -11,6 +11,7 @@ class Etiketti extends Component {
   }
 
   render() {
+    if (this.props.data.lang === "en") return null;
     return (
       <section id="etiketti">
         <div className="row">

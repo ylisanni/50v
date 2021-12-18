@@ -37,6 +37,7 @@ class Uutiset extends Component {
     }
   }
   render() {
+    if (this.props.data.lang === "en") return null;
     return (
       <section id="uutiset">
         <div className="row">

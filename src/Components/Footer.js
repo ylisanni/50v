@@ -9,7 +9,11 @@ class Footer extends Component {
           <Fade bottom>
             <div className="twelve columns">
               <div className="sponsors">
-                <h1>Yhteistyössä mukana</h1>
+                <h1>
+                  {this.props.data.lang === "en"
+                    ? "Sponsors"
+                    : "Yhteistyössä mukana"}
+                </h1>
                 <ul>
                   <li>Nitor</li>
                   <li>Mehiläinen</li>
