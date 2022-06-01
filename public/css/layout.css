@@ -598,11 +598,11 @@ etiketti .button {
 
 #ilmo a,
 #ilmo a:visited {
-  color: #0762f9;
+  color: #35b233;
 }
 #ilmo a:hover,
 #ilmo a:focus {
-  color: #fff;
+  color: #2a8e29;
 }
 
 #ilmo h1 {

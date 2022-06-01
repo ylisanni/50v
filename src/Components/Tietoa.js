@@ -15,27 +15,24 @@ class Tietoa extends Component {
           <div className="nine columns main-col">
             {this.props.data.lang === "en" ? (
               <>
-                <h2>About</h2>
+                <h2>Information</h2>
 
                 <p>
-                  Asteriski ry celebrates its 50th anniversary with the grand
-                  annual ball on Saturday 26th of February 2022. The annual ball
-                  begins with the cocktail party, which is hosted in the lounge
-                  of Agora building at the University of Turku. The cocktail
-                  party is followed by the main event at Turku VPK house and the
-                  afterparty is held in a secret location. Traveling between the
-                  destinations will be done via organized bus rides.
+                  Asteriski ry celebrates its 50th anniversary with a grand
+                  annual ball on Saturday 1st of October 2022. The annual ball
+                  begins with a cocktail party at the University of Turku. The
+                  cocktail party is followed by the main event at Turku VPK
+                  house and after that we will continue the celebration with the
+                  after party in a secret location.
                 </p>
                 <p>
-                  On the following morning on Sunday 27th of February 2022 the
-                  herring breakfast will be taking place in a secret location.
-                  Transportation to the herring breakfast will leave from XX:XX
-                  at Y.
+                  On the following morning on Sunday 2nd of October 2022 the
+                  herring breakfast will take place in a secret location.
                 </p>
                 <p>
-                  The dress code of the annual ball is a white tie or dark
+                  The dress code at the annual ball is a white tie or dark
                   lounge suit for men and an evening gown for women as well as
-                  academic medals or ribbons.
+                  academic decorations.
                 </p>
               </>
             ) : (
@@ -44,24 +41,22 @@ class Tietoa extends Component {
 
                 <p>
                   Asteriski ry:n 50-vuotisjuhlia juhlitaan juhlavasti lauantaina
-                  26. helmikuuta 2022. Vuosijuhlat alkavat
-                  cocktail-tilaisuudella, joka järjestetään Turun Yliopiston
-                  tiloissa Agora rakennuksen aulassa. Cocktail-tilaisuudesta
-                  siirrymme pääjuhlaan, joka järjestetään Turun VPK-talolla.
-                  Jatkot pidetään salaisessa jatkopaikassa. Matkat eri paikkojen
-                  välillä taittuu yhteisillä bussikuljetuksilla.
+                  1. lokakuuta 2022. Vuosijuhlat alkavat cocktail-tilaisuudella,
+                  joka järjestetään Turun yliopiston tiloissa.
+                  Cocktail-tilaisuudesta siirrymme itse pääjuhlaan Turun
+                  VPK-talolle. Juhlien jatkoja vietetään salaisessa
+                  jatkopaikassa.
                 </p>
                 <p>
-                  Seuraavana päivänä sunnuntaina 27. helmikuuta 2022 vietetään
-                  salaisessa paikassa sillistä. Sinne bussikuljetukset lähtevät
-                  kello XX:XX paikasta Y.
+                  Silliaamiaista eli sillistä nautitaan juhlien seuraavana
+                  päivänä sunnuntaina 2. lokakuuta. Jatkojen tapaan myös sillis
+                  järjestetään salaisessa paikassa.
                 </p>
                 <p>
                   Vuosijuhlien pukukoodina toimii juhlapuku tai tumma puku sekä
-                  akateemiset kunniamerkit. Lisää vuosijuhlan etiketistä voit
-                  lukea{" "}
+                  akateemiset kunniamerkit.{" "}
                   <a className="smoothscroll" href="#etiketti">
-                    täältä
+                    Lisätietoa vuosijuhlien etiketistä
                   </a>
                   .
                 </p>

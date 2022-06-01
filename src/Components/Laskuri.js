@@ -6,19 +6,19 @@ class Laskuri extends Component {
       <div className="laskuri row">
         <div className="laskuri-item columns three">
           <span className="laskuri-amount">{this.props.days}</span>{' '}
-          <span className="laskuri-text">päivää</span>
+          <span className="laskuri-text">{this.props.lang === "en" ? "days" : "päivää"}</span>
         </div>
         <div className="laskuri-item columns three">
           <span className="laskuri-amount">{this.props.hours}</span>{' '}
-          <span className="laskuri-text">tuntia</span>
+          <span className="laskuri-text">{this.props.lang === "en" ? "hours" : "tuntia"}</span>
         </div>
         <div className="laskuri-item columns three">
           <span className="laskuri-amount">{this.props.minutes}</span>{' '}
-          <span className="laskuri-text">minuuttia</span>
+          <span className="laskuri-text">{this.props.lang === "en" ? "minutes" : "minuuttia"}</span>
         </div>
         <div className="laskuri-item laskuri-item-last columns three">
           <span className="laskuri-amount">{this.props.seconds}</span>{' '}
-          <span className="laskuri-text">sekuntia</span>
+          <span className="laskuri-text">{this.props.lang === "en" ? "seconds" : "sekuntia"}</span>
         </div>
       </div>
     );

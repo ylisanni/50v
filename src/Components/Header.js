@@ -30,13 +30,11 @@ class Header extends Component {
               </a>
             </li>
 
-            {this.props.data.lang !== "en" ? (
-              <li>
-                <a className="smoothscroll" href="#uutiset">
-                  Uutiset
-                </a>
-              </li>
-            ) : null}
+            <li>
+              <a className="smoothscroll" href="#uutiset">
+                {this.props.data.lang === "en" ? "News" : "Uutiset"}
+              </a>
+            </li>
 
             <li>
               <a className="smoothscroll" href="#ohjelma">
@@ -44,27 +42,25 @@ class Header extends Component {
               </a>
             </li>
 
+            <li>
+              <a className="smoothscroll" href="#etiketti">
+                {this.props.data.lang === "en" ? "Etiquette" : "Etiketti"}
+              </a>
+            </li>
+
             {this.props.data.lang !== "en" ? (
-              <>
-                <li>
-                  <a className="smoothscroll" href="#etiketti">
-                    Etiketti
-                  </a>
-                </li>
-
-                <li>
-                  <a className="smoothscroll" href="#sillis">
-                    Sillis
-                  </a>
-                </li>
-
-                <li>
-                  <a className="smoothscroll" href="#ilmo">
-                    Ilmoittautuminen
-                  </a>
-                </li>
-              </>
+              <li>
+                <a className="smoothscroll" href="#sillis">
+                  Sillis
+                </a>
+              </li>
             ) : null}
+
+            <li>
+              <a className="smoothscroll" href="#ilmo">
+                {this.props.data.lang === "en" ? "Sign Up" : "Ilmoittautuminen"}
+              </a>
+            </li>
 
             <li>
               <a className="smoothscroll" href="#footer">
@@ -101,10 +97,10 @@ class Header extends Component {
               <h3>
                 {this.props.data.lang === "en" ? (
                   <>
-                    Welcome to celebrate the 50th anniversary of our cherished
-                    student organization Asteriski ry on Saturday 26.02.2022.
-                    The annual party will be preceded by the annual party week
-                    21.2.-24.2. The schedule can be found{" "}
+                    Welcome to celebrate the 50th anniversary of our amazing
+                    student organization Asteriski ry on Saturday 01.10.2022.
+                    The annual ball will be preceded by the annual ball week
+                    26.-30.9.2022 The schedule can be found{" "}
                     <a className="smoothscroll" href="#ohjelma">
                       here
                     </a>
@@ -113,11 +109,11 @@ class Header extends Component {
                 ) : (
                   <>
                     Tervetuloa juhlistamaan rakkaan ainejärjestömme Asteriski
-                    ry:n 50-vuotista taivalta lauantaina 26. helmikuuta 2022
+                    ry:n 50-vuotista taivalta lauantaina 1. lokakuuta 2022
                     vuosijuhlien merkeissä. Ennen vuosijuhlia järjestetään
-                    vuosijuhlaviikko 21.2.-24.2., jonka ohjelman löydät{" "}
+                    vuosijuhlaviikko 26.-30.9.2022,{" "}
                     <a className="smoothscroll" href="#ohjelma">
-                      täältä
+                      lisätietoa vuosijuhlaviikosta
                     </a>
                     .
                   </>

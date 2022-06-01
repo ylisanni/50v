@@ -9,6 +9,7 @@ import Uutiset from "./Components/Uutiset";
 import Etiketti from "./Components/Etiketti";
 import Sillis from "./Components/Sillis";
 import Ilmo from "./Components/Ilmo";
+import Sponsors from "./Components/Sponsors";
 
 class App extends Component {
   constructor(props) {
@@ -31,6 +32,7 @@ class App extends Component {
         <Etiketti data={this.state} />
         <Sillis data={this.state} />
         <Ilmo data={this.state} />
+        <Sponsors data={this.state} />
         <Footer data={this.state} />
       </div>
     );

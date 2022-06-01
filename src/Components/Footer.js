@@ -8,27 +8,11 @@ class Footer extends Component {
         <div className="row">
           <Fade bottom>
             <div className="twelve columns">
-              <div className="sponsors">
-                <h1>
-                  {this.props.data.lang === "en"
-                    ? "Sponsors"
-                    : "Yhteistyössä mukana"}
-                </h1>
-                <ul>
-                  <li>Nitor</li>
-                  <li>Mehiläinen</li>
-                  <li>Sofokus</li>
-                  <li>Solita</li>
-                  <li>ATR soft</li>
-                </ul>
-              </div>
-
               <ul className="copyright">
-                <li>&copy; Copyright 2021 Asteriski ry</li>
+                <li>&copy; Copyright 2022 Asteriski ry</li>
               </ul>
             </div>
           </Fade>
-
           <div id="go-top">
             <a className="smoothscroll" title="Back to Top" href="#home">
               <i className="icon-up-open"></i>

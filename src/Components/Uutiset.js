@@ -3,6 +3,8 @@ import axios from "axios";
 import Skeleton from "react-loading-skeleton";
 import Moment from "moment";
 import "react-loading-skeleton/dist/skeleton.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 
 class Uutiset extends Component {
   constructor(props) {
@@ -19,7 +21,7 @@ class Uutiset extends Component {
       let resp = await axios.get(
         "https://www.asteriski.fi/wp-json/wp/v2/posts?tags=673&_embed"
       );
-      let news = resp.data;
+      let news = resp.data.slice(0, 4);
       this.setState({
         ...this.state,
         ...{
@@ -37,7 +39,6 @@ class Uutiset extends Component {
     }
   }
   render() {
-    if (this.props.data.lang === "en") return null;
     return (
       <section id="uutiset">
         <div className="row">
@@ -45,7 +46,7 @@ class Uutiset extends Component {
             className="twelve columns"
             style={{ textAlign: "center", marginBottom: "2rem" }}
           >
-            <h2>Uutiset</h2>
+            <h2>{this.props.data.lang === "en" ? "News" : "Uutiset"}</h2>
           </div>
         </div>
         {this.state.isLoading ? (
@@ -59,10 +60,12 @@ class Uutiset extends Component {
             {this.state.news.map((post, index) => (
               <div className="row uutinen" key={index}>
                 <div className="wp-img columns two">
-                  <img
-                    alt="Post"
-                    src={post["_embedded"]["wp:featuredmedia"][0].source_url}
-                  ></img>
+                  {post["_embedded"]["wp:featuredmedia"] ? (
+                    <img
+                      alt="Post"
+                      src={post["_embedded"]["wp:featuredmedia"][0].source_url}
+                    ></img>
+                  ) : null}
                 </div>
                 <div className="main-col columns ten">
                   <div className="row item">
@@ -79,13 +82,13 @@ class Uutiset extends Component {
                           rel="noreferrer"
                           style={{ marginRight: "10px" }}
                         >
-                          Lue lisää
+                          {this.props.data.lang === "en" ? "Read more" : "Lue lisää"}
                         </a>
-                        <i
-                          className="fa-calendar"
-                          style={{ color: "var(--gold)" }}
-                        ></i>
                         <em className="date" style={{ marginLeft: "14px" }}>
+                          <FontAwesomeIcon
+                            icon={faCalendar}
+                            style={{ color: "var(--gold)" }}
+                          />{" "}
                           {Moment(post.date).format("D.M.YYYY HH:mm")}
                         </em>
                       </div>

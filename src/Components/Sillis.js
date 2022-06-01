@@ -5,6 +5,7 @@ class Sillis extends Component {
     if (this.props.data.lang === "en") return null;
     return (
       <section id="sillis">
+        <div className="sillisTop"></div>
         <div className="row">
           <div className="twelve columns">
             <h1>Sillis</h1>
@@ -32,6 +33,7 @@ class Sillis extends Component {
             </p>
           </div>
         </div>
+        <div className="sillisBottom"></div>
       </section>
     );
   }
