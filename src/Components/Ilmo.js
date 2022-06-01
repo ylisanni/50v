@@ -44,7 +44,7 @@ class Ilmo extends Component {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  More info about volunteering.
+                  More info about volunteering
                 </a>
                 .
               </p>
