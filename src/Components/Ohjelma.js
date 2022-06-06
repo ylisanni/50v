@@ -9,7 +9,7 @@ class Ohjelma extends Component {
             {this.props.data.lang === "en" ? (
               <>
                 <h1>The program</h1>
-                <h2>Coctail party</h2>
+                <h2>Cocktail party</h2>
                 <p>
                   The cocktail party will be held at the University starting at
                   14:30. The cocktail party consists of welcome toast,
@@ -19,7 +19,7 @@ class Ohjelma extends Component {
                 </p>
                 <p>
                   <div className="ohjelma-sponsor-text">
-                    Coctail party sponsor:
+                    Cocktail party sponsor:
                   </div>
                   <div className="ohjelma-sponsor">
                     <a
@@ -133,7 +133,7 @@ class Ohjelma extends Component {
             ) : (
               <>
                 <h1>Ohjelma</h1>
-                <h2>Coctail</h2>
+                <h2>Cocktail-tilaisuus</h2>
                 <p>
                   Pääjuhlaa edeltää cocktail-tilaisuus, joka pidetään Turun
                   yliopiston tiloissa kello 14:30 alkaen. Cocktail-tilaisuuden
@@ -145,7 +145,7 @@ class Ohjelma extends Component {
                 </p>
                 <p>
                   <div className="ohjelma-sponsor-text">
-                    Coctail-tilaisuudessa mukana:
+                    Cocktail-tilaisuudessa mukana:
                   </div>
                   <div className="ohjelma-sponsor">
                     <a
