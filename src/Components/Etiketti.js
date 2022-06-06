@@ -25,18 +25,17 @@ class Etiketti extends Component {
                 <h2>Dresscode</h2>
 
                 <p>
-                  The dress code at the annual ball is a white tie or a dark
-                  lounge suit for men and an evening gown for women as well as
+                  The dress code at the annual ball is a white tie or an evening gown with
                   academic medals or ribbons.
                 </p>
 
                 <p>
-                  A dark lounge suit refers to a black suit with a white shirt
-                  and a light-colored tie. Evening gown should be full length,
+                  Evening gown should be full length,
                   the hemline going under the ankles. Handbag should be
                   strapless and fit the occasion. Shoulders should be covered
                   during the main event. Gloves can be worn but not during
-                  dinner.
+                  dinner. A dark lounge suit is also sufficient and it refers to a black suit with a white shirt
+                  and a light-colored tie.
                 </p>
 
                 <p>
@@ -102,7 +101,7 @@ class Etiketti extends Component {
 
                 <p>
                   You may leave your table freely during the scheduled breaks.
-                  Otherwise, you should request permission from your closest
+                  Otherwise, it's polite to request permission from your closest
                   tableside company. Don’t move during songs or speeches.
                 </p>
 
@@ -119,18 +118,18 @@ class Etiketti extends Component {
                 <h2>Pukukoodi</h2>
 
                 <p>
-                  Pukukoodina vuosijuhlissa toimii juhlapuku tai tumma puku sekä
-                  akateemiset kunniamerkit.
+                  Pukukoodina vuosijuhlissa toimii juhlapuku sekä akateemiset
+                  kunniamerkit.
                 </p>
 
                 <p>
-                  Juhlapuku tarkoittaa frakkia ja tumma puku on musta puku.
-                  Tumman puvun kanssa tulee käyttää valkoista paitaa sekä
+                  Juhlapuku tarkoittaa frakkia. Frakin voi myös korvata hillityllä tummalla puvulla.
+                  Tällöin tumman puvun kanssa tulee käyttää valkoista paitaa sekä
                   vaaleaa tai helmiäistä yksiväristä solmiota.
                 </p>
 
                 <p>
-                  Naiselle tämä tarkoittaa täyspitkää ilta- tai juhlapukua eli
+                  Täyspitkää ilta- tai juhlapukua käytettäessä
                   vain kengän kärjet saavat näkyä. Laukkuna tulee toimia
                   olkaimeton ja siro laukku. Pääjuhlassa lippujen läsnäollessa
                   hartioiden tulisi myös olla peitettynä esimerkiksi
@@ -196,16 +195,16 @@ class Etiketti extends Component {
 
                 <p>
                   Taukojen aikana juhlakansa voi vapaasti nousta pöydästä.
-                  Muuten pöydästä poistumiseen kysytään lupa lähimmältä
+                  Muuten pöydästä poistumiseen on kohteliasta kysyä lupa lähimmältä
                   pöytäseurueelta, minkä jälkeen voi huomaamatta poistua
-                  juhlasalista. Liikennettä ei kuitenkaan pitäisi tapahtua
+                  juhlasalista. Tarpeetonta liikennettä ei kuitenkaan pitäisi tapahtua
                   laulujen tai ohjelmanumeroiden aikana.
                 </p>
 
                 <p>
                   Myös vuosijuhlassa jokaisen laulun jälkeen kohotetaan malja.
-                  Skoolattaessa laseja ei kilistellä yhteen vaan skoolaustoveria
-                  silmiin katsoen nostetaan laseja eteen. Ensin skoolataan
+                  Skoolattaessa laseja ei kilistellä yhteen. Skoolaustoveria
+                  on kohteliasta katsoa silmiin skoolauksen aikana. Ensin skoolataan
                   viistosti istuvan kanssa aloittaen oikealle, tämän jälkeen
                   viistosti vasempaan ja lopuksi edessä istuvan kanssa. Tyhjällä
                   lasilla ei tule skoolata.
