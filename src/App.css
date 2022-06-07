@@ -118,6 +118,22 @@ header a {
   color: #2a8e29;
 }
 
+#etiketti p {
+  text-align: justify;
+}
+#ohjelma p {
+  text-align: justify;
+}
+#tietoa p {
+  text-align: justify;
+}
+#uutiset p {
+  text-align: justify;
+}
+#sillis p {
+  text-align: justify;
+}
+
 .ohjelma-sponsor {
   max-width: 100px;
   max-height: 100px;
