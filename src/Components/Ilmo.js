@@ -40,7 +40,7 @@ class Ilmo extends Component {
               <p>
                 You can also attend the Annual Ball as a volunteer.{" "}
                 <a
-                  href="https://www.asteriski.fi/nakittautuminen/"
+                  href="https://nakit.asteriski.fi"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -67,7 +67,7 @@ class Ilmo extends Component {
               <p>
                 Halutessasi voit osallistua vuosijuhlille myös nakkien muodossa.{" "}
                 <a
-                  href="https://www.asteriski.fi/nakittautuminen/"
+                  href="https://nakit.asteriski.fi"
                   target="_blank"
                   rel="noreferrer"
                 >
