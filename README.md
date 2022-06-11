@@ -4,11 +4,11 @@
 
 ```shell
 npm i
-npm start
+REACT_APP_API_URL="http://localhost:8000/api/participants/" npm start
 ```
 
 ## Build
 
 ```shell
-npm run build
+REACT_APP_API_URL="http://localhost:8000/api/participants/" npm run build
 ```
