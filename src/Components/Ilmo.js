@@ -42,7 +42,7 @@ class Ilmo extends Component {
             <div className="row section-head">
               {this.props.data.lang === "en" ? (
                 <>
-                  <h1>Sign Up</h1>
+                  <h2>Sign Up</h2>
                   <p>
                     Signing up for the annual ball starts for Asteriski members
                     and other guests on 16.8.2022. The dinner card costs 100
@@ -68,7 +68,7 @@ class Ilmo extends Component {
                 </>
               ) : (
                 <>
-                  <h1>Ilmoittautuminen</h1>
+                  <h2>Ilmoittautuminen</h2>
                   <p>
                     Vuosijuhlien ilmoittautuminen Asteriskin jäsenistölle sekä
                     muille vieraille aukeaa 16.8.2022. Vuosijuhlien

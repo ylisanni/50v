@@ -1,151 +1,167 @@
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
+
 .wp-img {
-  margin-top: 10px;
-  margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @font-face {
-  font-family: carneval;
-  src: url("assets/carneval.ttf");
+    font-family: carneval;
+    src: url("assets/carneval.ttf");
 }
 
 .wp-img img {
-  border-bottom: 1px solid var(--gray-darker);
-  border-radius: 50%;
-  display: block;
-  margin: auto;
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
+    border-bottom: 1px solid var(--gray-darker);
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
+
 .rotating-logo {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
 }
 
 .rotating-logo:hover,
 .rotating-logo:focus,
 .rotating-logo:active {
-  -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 .main-logo {
-  padding-top: 40px;
+    padding-top: 40px;
 }
 
 .laskuri {
-  font-family: "Major Mono Display", monospace;
-  text-align: center;
+    font-family: "Major Mono Display", monospace;
+    text-align: center;
 }
 
 .laskuri-item {
-  font-weight: bold;
-  font-size: 1.5rem;
-  border-right: 1px solid;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-right: 1px solid;
 }
 
 .laskuri-item-last {
-  padding-right: 0;
-  border-right: 0;
+    padding-right: 0;
+    border-right: 0;
 }
 
 .laskuri-amount {
-  color: var(--gold);
-}
-
-#sillis {
-  background-color: #ffde00;
-  padding-top: 0;
-  padding-bottom: 0;
+    color: var(--gold);
 }
 
 .sillisTop {
-  background-image: url("assets/sirkus2.png");
-  height: 120px;
+    overflow: hidden;
+    background-image: url("assets/sirkus2.png");
+    height: 120px;
+    filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
+    -webkit-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
+    -moz-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
 }
 
 .sillisBottom {
-  background-image: url("assets/sirkus.png");
-  height: 120px;
-}
-
-#sillis p {
-  color: #000000;
-}
-
-#sillis h1 {
-  color: #f80000;
-  font-size: 3.4rem;
-  font-family: carneval;
+    overflow: hidden;
+    background-image: url("assets/sirkus.png");
+    height: 120px;
+    filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
+    -webkit-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
+    -moz-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
 }
 
 #sponsors {
-  background-color: #fbfbfb;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  text-align: center;
+    background-color: #fbfbfb;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    text-align: center;
 }
 
 #sponsors h1 {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
-.sponsors-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  grid-gap: 20px;
-  align-items: stretch;
+.sponsors-flex {
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-.sponsors-grid img {
-  max-width: 100%;
+.sponsors-flex a {
+    display: flex;
+    width: 27rem;
+    height: 12rem;
+    padding: 1rem 0;
+}
+
+.sponsors-flex img {
+    width: 100%;
+    object-fit: contain;
+    padding: 1rem 0;
+}
+
+@media only screen and (min-width: 720px) {
+    .sponsors-flex img {
+        filter: grayscale(1);
+        transition: all .3s ease-in-out;
+    }
+
+    .sponsors-flex img:hover {
+        filter: grayscale(0);
+        transform: scale(1.1);
+    }
 }
 
 header a {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
-#etiketti a:hover,
-#etiketti a:focus {
-  color: #2a8e29;
+.ohjelma-sponsor-images {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
-#etiketti p {
-  text-align: justify;
-}
-#ohjelma p {
-  text-align: justify;
-}
-#tietoa p {
-  text-align: justify;
-}
-#uutiset p {
-  text-align: justify;
-}
-#sillis p {
-  text-align: justify;
+.ohjelma-sponsor-text {
+    color: var(--gray);
 }
 
 .ohjelma-sponsor {
-  max-width: 100px;
-  max-height: 100px;
-  background-color: #fff;
-  padding: 5px;
-  margin: 5px;
+    display: flex;
+    width: 21rem;
+    padding: 1rem 0;
+    height: 10rem;
 }
+
 .ohjelma-sponsor img {
-  max-width: 100%;
-  max-height: 100%;
+    width: 100%;
+    object-fit: contain;
+    padding: 1rem 0;
+    filter: brightness(0) invert(1);
+    object-position: left;
+    transition: all .3s ease-in-out;
 }
-.ohjelma-sponsor a {
-  max-width: 100%;
-  max-height: 100%;
+
+.ohjelma-sponsor img:hover {
+    scale: 1.1;
+}
+
+.ohjelma {
+    margin: 6rem 0;
 }

@@ -163,20 +163,14 @@ h1, h2, h3, h4, h5, h6 {
    font-weight: normal;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-h1 { font-size: 38px; line-height: 42px; margin-bottom: 12px; letter-spacing: -1px; }
-h2 { font-size: 28px; line-height: 36px; margin-bottom: 6px; }
-h3 { font-size: 22px; line-height: 30px; margin-bottom: 12px; }
-h4 { font-size: 20px; line-height: 30px; margin-bottom: 6px; }
-h5 { font-size: 18px; line-height: 30px; }
-h6 { font-size: 14px; line-height: 30px; }
+h1 { font: 3rem/3.5rem "opensans-bold", sans-serif; margin-bottom: 12px; letter-spacing: -1px; }
+h2 { font: 2.5rem/3rem "opensans-bold", sans-serif; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+h3 { font: 2rem/2.5rem "opensans-bold", sans-serif; margin-bottom: 12px; }
+h4, h5, h6 { font: 2rem/2.5rem "opensans-bold", sans-serif; margin-bottom: 6px; }
+
 .subheader { }
 
-p { margin: 0 0 30px 0; }
-p img { margin: 0; }
-p.lead {
-   font: 19px/36px 'opensans-light', sans-serif;
-   margin-bottom: 18px;
-}
+p { font: 1.5rem/3rem 'opensans-regular', sans-serif; margin-bottom: 2rem;}
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */
@@ -284,19 +278,18 @@ hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 3
 
 
 /*  3. Links  ------------------------------------------------------- */
-
 a, a:visited {
-   text-decoration: none;
-   outline: 0;
-   color: #35B233;
-
-   -webkit-transition: color .3s ease-in-out;
-   -moz-transition: color .3s ease-in-out;
-   -o-transition: color .3s ease-in-out;
-   transition: color .3s ease-in-out;
+    color: var(--gray-darker);
+    outline: 0;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
 }
-a:hover, a:focus { color: #313131; }
-p a, p a:visited { line-height: inherit; }
+a:hover, a:active {
+    color: var(--gold);
+}
 
 
 /*  4. List  --------------------------------------------------------- */

@@ -1,60 +1,46 @@
-import React, { Component } from "react";
-import Fade from "react-reveal";
+import React, { Component } from 'react'
+import Fade from 'react-reveal'
 
 class Footer extends Component {
-  render() {
-    return (
-      <section id="sponsors">
-        <div className="row">
-          <Fade bottom>
-            <div className="sponsors">
-              <h1>
-                {this.props.data.lang === "en"
-                  ? "Sponsors"
-                  : "Yhteistyössä mukana"}
-              </h1>
-              <div className="sponsors-grid">
-                <a rel="noreferrer" href="https://nitor.com/" target="_blank">
-                  <img alt="Nitor logo" src="images/companies/nitor.png" />
-                </a>
-                <a
-                  rel="noreferrer"
-                  href="https://www.atrsoft.com/"
-                  target="_blank"
-                >
-                  <img alt="ATR logo" src="images/companies/atr.png" />
-                </a>
-                <a
-                  rel="noreferrer"
-                  href="https://www.sofokus.com/"
-                  target="_blank"
-                >
-                  <img alt="Sofokus logo" src="images/companies/sofokus.png" />
-                </a>
-                <a
-                  rel="noreferrer"
-                  href="https://www.solita.fi/"
-                  target="_blank"
-                >
-                  <img alt="Solita logo" src="images/companies/solita.png" />
-                </a>
-                <a
-                  rel="noreferrer"
-                  href="https://www.mehilainen.fi/"
-                  target="_blank"
-                >
-                  <img
-                    alt="Mehiläinen logo"
-                    src="images/companies/mehilainen.png"
-                  />
-                </a>
-              </div>
-            </div>
-          </Fade>
-        </div>
-      </section>
-    );
-  }
+    Sponsor (props) {
+        return (
+            <a rel="noreferrer" href={props.sponsor_url} target="_blank">
+                <img alt={`${props.sponsor_name} -logo`} src={`images/companies/colored/${props.sponsor_image_url}`} />
+            </a>
+        )
+    };
+
+    render () {
+        const sponsors = [
+            { sponsor_name: 'Nitor', sponsor_url: 'https://nitor.com/', sponsor_image_url: 'nitor.png' },
+            { sponsor_name: 'ATR Soft', sponsor_url: 'https://www.atrsoft.com/', sponsor_image_url: 'atr.png' },
+            { sponsor_name: 'Sofokus', sponsor_url: 'https://www.sofokus.com/', sponsor_image_url: 'sofokus.png' },
+            { sponsor_name: 'Solita', sponsor_url: 'https://www.solita.fi/', sponsor_image_url: 'solita.png' },
+            { sponsor_name: 'Mehiläinen', sponsor_url: 'https://www.mehilainen.fi/', sponsor_image_url: 'mehilainen.png' },
+            { sponsor_name: 'Gofore', sponsor_url: 'https://gofore.com/', sponsor_image_url: 'gofore.png' },
+            { sponsor_name: 'Tivia', sponsor_url: 'https://tivia.fi/', sponsor_image_url: 'tivia.png' },
+        ]
+        sponsors.sort(() => Math.random() - 0.5)
+
+        return (
+            <section id="sponsors">
+                <div className="row">
+                    <Fade bottom>
+                        <div className="sponsors">
+                            <h2>
+                                {this.props.data.lang === 'en' ? 'Sponsors' : 'Yhteistyössä mukana'}
+                            </h2>
+                            <div className="sponsors-flex">
+                                {sponsors.map((object, index) => {
+                                    return <div className="sponsor" key={index}>{this.Sponsor(object)}</div>
+                                })}
+                            </div>
+                        </div>
+                    </Fade>
+                </div>
+            </section>
+        )
+    }
 }
 
-export default Footer;
+export default Footer
