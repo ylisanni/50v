@@ -60,7 +60,7 @@ class Uutiset extends Component {
                 ) : (
                     <div className="wp-news">
                         {this.state.news.map((post, index) => (
-                            <div className="row uutinen" key={index}>
+                            <div className="row" key={index}>
                                 <div className="wp-img columns two">
                                     {post['_embedded']['wp:featuredmedia'] ? (
                                         <img
@@ -72,12 +72,25 @@ class Uutiset extends Component {
                                 <div className="main-col columns ten">
                                     <div className="row item">
                                         <div className="twelve columns">
-                                            <h4
+                                            <h3
                                                 dangerouslySetInnerHTML={{
                                                     __html: post.title.rendered,
                                                 }}
                                             />
+                                            <p
+                                            className="wp-excerpt"
+                                            dangerouslySetInnerHTML={{
+                                                __html: post.excerpt.rendered,
+                                            }}
+                                        />
                                             <div className="info">
+                                                <em className="date">
+                                                    <FontAwesomeIcon
+                                                        icon={faCalendar}
+                                                        style={{ color: 'var(--gold)' }}
+                                                    />{' '}
+                                                    {Moment(post.date).format('D.M.YYYY')}
+                                                </em>
                                                 <a
                                                     href={post.link}
                                                     target="_blank"
@@ -86,25 +99,14 @@ class Uutiset extends Component {
                                                 >
                                                     {this.props.data.lang === 'en' ? 'Read more' : 'Lue lisää'}
                                                 </a>
-                                                <em className="date" style={{ marginLeft: '14px' }}>
-                                                    <FontAwesomeIcon
-                                                        icon={faCalendar}
-                                                        style={{ color: 'var(--gold)' }}
-                                                    />{' '}
-                                                    {Moment(post.date).format('D.M.YYYY HH:mm')}
-                                                </em>
                                             </div>
-                                            <p
-                                                className="wp-excerpt"
-                                                dangerouslySetInnerHTML={{
-                                                    __html: post.excerpt.rendered,
-                                                }}
-                                            />
+
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         ))}
+
                     </div>
                 )}
             </section>

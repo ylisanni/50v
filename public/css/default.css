@@ -142,12 +142,9 @@ html {
 }
 
 body {
-   background: #fff;
-   font-family: 'opensans-regular', sans-serif;
-   font-weight: normal;
-   font-size: 15px;
-   line-height: 30px;
-	color: #838C95;
+   background: var(--gray);
+    font: 1.5rem/3rem 'opensans-regular', sans-serif;
+	color: var(--greenish-gray);
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
 	-webkit-text-size-adjust: 100%;
@@ -157,20 +154,16 @@ body {
        Vertical rhythm with leading derived from 6
 --------------------------------------------------------------------- */
 
-h1, h2, h3, h4, h5, h6 {
-   color: #313131;
-	font-family: 'opensans-bold', sans-serif;
-   font-weight: normal;
-}
+h1, h2, h3, h4, h5, h6 {font-family: 'opensans-bold', sans-serif;font-weight: normal;}
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
-h1 { font: 3rem/3.5rem "opensans-bold", sans-serif; margin-bottom: 12px; letter-spacing: -1px; }
-h2 { font: 2.5rem/3rem "opensans-bold", sans-serif; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
-h3 { font: 2rem/2.5rem "opensans-bold", sans-serif; margin-bottom: 12px; }
-h4, h5, h6 { font: 2rem/2.5rem "opensans-bold", sans-serif; margin-bottom: 6px; }
+h1 { font: 2.5rem/3.5rem "opensans-bold", sans-serif; margin-bottom: 12px; letter-spacing: -1px; color: var(--gray);}
+h2 { font: 2rem/3rem "opensans-bold", sans-serif; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; color: var(--gray);}
+h3 { font: 1.75rem/2.5rem "opensans-bold", sans-serif; margin-bottom: 12px; color: var(--gold);}
+h4, h5, h6 { font: 1.75rem/2.5rem "opensans-bold", sans-serif; margin-bottom: 6px; color: var(--gold);}
 
 .subheader { }
 
-p { font: 1.5rem/3rem 'opensans-regular', sans-serif; margin-bottom: 2rem;}
+p { font: 1.6rem/3rem 'opensans-regular', sans-serif; margin-bottom: 2rem; color: var(--greenish-gray)}
 
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */

@@ -11,7 +11,7 @@ class Ohjelma extends Component {
                                 <div className="ohjelma">
                                     <div className="ohjelma-kuvaus-osio">
                                         <h2>The program</h2>
-                                        <h3>Cocktail party</h3>
+                                        <h3>Cocktail Party</h3>
                                         <p>
                                             The cocktail party will be held at the University starting at
                                             14:30. The cocktail party consists of welcome toast,
@@ -22,7 +22,7 @@ class Ohjelma extends Component {
                                     </div>
                                     <div className="ohjelma-sponsori-osio">
                                         <h4 className="ohjelma-sponsor-text">
-                                            Cocktail party sponsor:
+                                            Cocktail Party sponsor:
                                         </h4>
                                         <div className="ohjelma-sponsor-images">
                                             <a className="ohjelma-sponsor" rel="noreferrer" href="https://www.mehilainen.fi/" target="_blank">
@@ -46,7 +46,7 @@ class Ohjelma extends Component {
                                     </div>
                                     <div className="ohjelma-sponsori-osio">
                                         <h4 className="ohjelma-sponsor-text">
-                                            Main event sponsors:
+                                            Main Event sponsors:
                                         </h4>
                                         <div className="ohjelma-sponsor-images">
                                             <a className="ohjelma-sponsor" rel="noreferrer" href="https://nitor.com/" target="_blank">
@@ -227,17 +227,47 @@ class Ohjelma extends Component {
                     {
                         this.props.data.lang !== 'en' ? (
                             <div className="three columns">
-                                <h3 style={{ color: 'var(--white)' }}>
-                                    Vuosijuhlaviikon ohjelma
-                                </h3>
-                                <p>Vuosijuhlaviikon ohjelma julkaistaan myöhemmin.</p>
+                                <div className="ohjelma">
+                                    <div className="ohjelma-kuvaus-osio">
+                                        <h3>Vuosijuhlaviikon ohjelma</h3>
+                                        <p>
+                                            Vuosijuhlaviikon ohjelma julkaistaan myöhemmin.
+                                        </p>
+                                    </div>
+                                    <div className="ohjelma-sponsori-osio">
+                                        <h4 className="ohjelma-sponsor-text">
+                                            Vuosijuhlaviikolla mukana:
+                                        </h4>
+                                        <div className="ohjelma-sponsor-images">
+                                            <a className="ohjelma-sponsor"
+                                               rel="noreferrer" href="https://gofore.com/" target="_blank">
+                                                <img alt="Gofore logo" src="images/companies/colored/gofore.png" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         ) : (
                             <div className="three columns">
-                                <h3 style={{ color: 'var(--white)' }}>
-                                    Schedule of the annual ball week
-                                </h3>
-                                <p>Schedule will be published later.</p>
+                                <div className="ohjelma">
+                                    <div className="ohjelma-kuvaus-osio">
+                                        <h3>Schedule of the Annual Ball Week</h3>
+                                        <p>
+                                            Schedule will be published later.
+                                        </p>
+                                    </div>
+                                    <div className="ohjelma-sponsori-osio">
+                                        <h4 className="ohjelma-sponsor-text">
+                                            Annual Ball Week sponsor:
+                                        </h4>
+                                        <div className="ohjelma-sponsor-images">
+                                            <a className="ohjelma-sponsor"
+                                               rel="noreferrer" href="https://gofore.com/" target="_blank">
+                                                <img alt="Gofore logo" src="images/companies/colored/gofore.png" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         )
                     }

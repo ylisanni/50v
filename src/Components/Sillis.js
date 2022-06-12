@@ -21,7 +21,7 @@ class Sillis extends Component {
                             hämmästyneet henkäykset ja lämmin nauru!
                         </p>
                             <p><span className="first"><i>Se</i></span> on ihmeellinen, <span className="second"><i>se</i></span> on uskomaton, <span className="third"><i>se</i></span> on <b><a className="sillis-linkki" href="https://www.youtube.com/watch?v=lAIGb1lfpBw&t=9s">fantastinen!</a></b></p>
-                        <p className="draw-attention">🅰🆂🆃🅴🆁🅸🆂🅺🅸🅽&nbsp;&nbsp;&nbsp;🆂🅸🆁🅺🆄🆂🆃🅴🅴🅼🅰🅸🅽🅴🅽&nbsp;&nbsp;&nbsp;🆂🅸🅻🅻🅸🅰🅰🅼🅸🅰🅸🅽🅴🅽❗</p>
+                        <p className="draw-attention">🅰🆂🆃🅴🆁🅸🆂🅺🅸🅽    🆂🅸🆁🅺🆄🆂🆃🅴🅴🅼🅰🅸🅽🅴🅽    🆂🅸🅻🅻🅸🅰🅰🅼🅸🅰🅸🅽🅴🅽❗</p>
                         <p>
                             Astu sisään ja koe valot ja pelit ja herkut ja riemu! Ehkä
                             sirkuksen maaginen tunnelma taikoo venähtäneen illan väsymyksenkin

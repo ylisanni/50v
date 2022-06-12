@@ -10,11 +10,8 @@ class Header extends Component {
             <header id="home">
                 <ParticlesBg color="#fff" type="lines" bg={true} />
                 <nav id="nav-wrap">
-                    <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
+                    <a className="mobile-btn" id="mobile-toggle" title="Show navigation">
                         Show navigation
-                    </a>
-                    <a className="mobile-btn" href="#home" title="Hide navigation">
-                        Hide navigation
                     </a>
 
                     <ul id="nav" className="nav">
@@ -63,7 +60,7 @@ class Header extends Component {
                         </li>
 
                         <li>
-                            <a className="smoothscroll" href="#footer">
+                            <a className="smoothscroll" href="#sponsors">
                                 {this.props.data.lang === 'en' ? 'Sponsors' : 'Sponsorit'}
                             </a>
                         </li>
@@ -86,7 +83,7 @@ class Header extends Component {
 
                 <div className="row banner">
                     <div className="banner-text">
-                        <Fade bottom>
+                        <Fade bottom duration={1200}>
                             <img
                                 alt="main logo"
                                 src="/images/basic-gold-logo-may22.png"
@@ -123,11 +120,11 @@ class Header extends Component {
                     </div>
                 </div>
 
-                <p className="scrolldown">
+                <div className="scrolldown">
                     <a className="smoothscroll" href="#tietoa">
                         <i className="icon-down-circle"></i>
                     </a>
-                </p>
+                </div>
             </header>
         )
     }

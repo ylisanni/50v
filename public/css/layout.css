@@ -13,10 +13,13 @@
     --gray-darker: #e1e1e1;
     --background: #0f0f0f;
     --green: #2c8f43;
+    --greenish-gray:#888;
     --ohjelma-bg: #010101;
     --etiketti-bg: #212121;
     --sillis-bg: #ffca00;
     --sillis-header: #ff0f2e;
+
+    --section-padding: 5rem 0;
 }
 
 /* ------------------------------------------------------------------ */
@@ -33,10 +36,8 @@ body {
 
 header {
     position: relative;
-    height: 800px;
-    min-height: 500px;
+    height: max-content;
     width: 100%;
-
     text-align: center;
     overflow: hidden;
 }
@@ -56,88 +57,52 @@ header .banner {
     width: 85%;
     padding-bottom: 30px;
     text-align: center;
+    height: 100%;
 }
 
 header .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
     width: 100%;
+    height: 100%;
+    font-size: 1.8rem;
 }
 
 header .banner-text h1 {
-    color: var(--gray);
     letter-spacing: -2px;
     margin: 0 auto 18px auto;
 }
 
 header .banner-text h2 {
-    color: var(--gray);
+    padding-top: 2rem;
     margin: 0 auto;
     width: 75%;
     text-transform: none;
     font-family: "librebaskerville-regular", serif;
 }
 
-header .banner-text h2 span,
-header .banner-text h2 a {
-    transition: all .3s ease-in-out;
-    color: var(--gray-darker);
-}
-
-header .banner-text h2 span:hover,
-header .banner-text h2 a:hover {
-    color: var(--gold);
-}
-
-header .banner-text hr {
-    width: 60%;
-    margin: 18px auto 24px auto;
-    border-color: #2f2d2e;
-    border-color: rgba(150, 150, 150, 0.1);
-}
-
-/* header social links */
-header .social {
-    margin: 24px 0;
-    padding: 0;
-    font-size: 30px;
-}
-
-header .social li {
-    display: inline-block;
-    margin: 0 15px;
-    padding: 0;
-}
-
-header .social li a {
-    color: #fff;
-}
-
-header .social li a:hover {
-    color: #0762f9;
-}
-
 /* scrolldown link */
-header .scrolldown a {
-    position: absolute;
-    bottom: 30px;
-    left: 50%;
-    margin-left: -29px;
-    color: #fff;
-    display: block;
-    height: 42px;
-    width: 42px;
-    font-size: 42px;
-    line-height: 42px;
-    color: #fff;
-    border-radius: 100%;
+header .scrolldown{
+    position: relative;
+    margin: 2rem 0;
+}
 
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+header .scrolldown a {
+    color: var(--white);
+    font-size: 4rem;
 }
 
 header .scrolldown a:hover {
     color: var(--green);
+}
+
+#etiketti, #ohjelma, #tietoa, #uutiset, #sillis, #ilmo, #sponsors{
+    height: max-content;
+    padding: var(--section-padding);
+    overflow: hidden;
 }
 
 #etiketti p, #ohjelma p, #tietoa p, #uutiset p, #sillis p {
@@ -179,7 +144,7 @@ header .scrolldown a:hover {
 }
 
 ul#nav {
-    min-height: 48px;
+    min-height: 4rem;
     width: auto;
 
     /* center align the menu */
@@ -195,28 +160,15 @@ ul#nav li {
 
 /* Links */
 ul#nav li a {
-    /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
-
     display: inline-block;
     padding: 8px 13px;
-    line-height: 32px;
     text-decoration: none;
     text-align: left;
-    color: #fff;
-
-    -webkit-transition: color 0.2s ease-in-out;
-    -moz-transition: color 0.2s ease-in-out;
-    -o-transition: color 0.2s ease-in-out;
-    -ms-transition: color 0.2s ease-in-out;
-    transition: color 0.2s ease-in-out;
-}
-
-ul#nav li a:active {
-    background-color: transparent !important;
 }
 
 ul#nav li.current a {
     color: var(--gold);
+    border-bottom: 3px solid var(--gold);
 }
 
 /* ------------------------------------------------------------------ */
@@ -224,27 +176,11 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #tietoa {
-    background: url(../images/valot_taustalla.png);
-    height: max-content;
+    background: url(../images/valot_taustalla.jpg);
     background-size: cover;
-    padding: 40px 0;
-}
-
-#tietoa a, #tietoa a:visited {
-    color: var(--gray-darker);
-}
-#tietoa a:hover, #tietoa a:active {
-    color: var(--gold);
-}
-
-
-#tietoa h2 {
-    color: var(--gray);
-    margin-bottom: 12px;
 }
 
 #tietoa p {
-    line-height: 30px;
     color: var(--gray);
 }
 
@@ -252,6 +188,7 @@ ul#nav li.current a {
     display: table-cell;
     float: none;
 }
+
 #tietoa .asteriskilogo-container {
     position: relative;
 }
@@ -272,45 +209,63 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #uutiset {
-    background-color: var(--white);
-    height: max-content;
-    padding: 6rem 0;
+    background-color: var(--gray);
 }
 
-#uutiset a,
-#uutiset a:visited {
-    font: 16px/24px "librebaskerville", serif;
+#uutiset .wp-news > .row {
+    padding: 3rem;
+    background-color: var(--white);
+    margin-bottom: 3rem;
+    border-radius: 5px;
+}
+
+#uutiset .wp-news > .row:last-of-type {
+    margin-bottom: 0;
+}
+
+#uutiset h2 {
     color: var(--green);
 }
-#uutiset a:hover,
-#uutiset a:active {
-    color: var(--gold);
+#uutiset h3 {
+    color: var(--etiketti-bg);
 }
 
-#uutiset h4 {
-    font-family: "opensans-bold", sans-serif;
+#uutiset hr {
+    width: 20%;
+    border-width: 2px;
+    margin: 4rem auto;
 }
-
-.uutinen {
-    margin-bottom: 4rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid var(--gray-darker);
+#uutiset .wp-excerpt{
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--gray);
 }
 
 #uutiset .info {
-    color: var(--ohjelma-bg);
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-#uutiset .info span {
-    margin-right: 5px;
-    margin-left: 5px;
+#uutiset .info .date {
+    font-family: "opensans-regular", sans-serif;
+    font-size: 1.5rem;
+    color: var(--etiketti-bg);
+
 }
 
-#uutiset .date {
-    font: 15px/24px "opensans-regular", sans-serif;
-    margin-top: 6px;
+#uutiset .info a,
+#uutiset .info a:visited {
+    font-family: "librebaskerville-bold", serif;
+    color: var(--green);
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    text-decoration: none;
 }
+#uutiset .info a:hover,
+#uutiset .info a:active {
+    color: var(--gold);
+}
+
 
 /* ------------------------------------------------------------------ */
 /* Ohjelma
@@ -318,9 +273,6 @@ ul#nav li.current a {
 
 #ohjelma {
     background: var(--ohjelma-bg);
-    height: max-content;
-    padding: 6rem 0;
-    overflow: hidden;
 }
 
 #ohjelma h2 {
@@ -337,9 +289,7 @@ ul#nav li.current a {
 
 #sillis {
     background: var(--sillis-bg);
-    height: max-content;
     padding: 0;
-    overflow: hidden;
 }
 
 #sillis h2 {
@@ -356,7 +306,7 @@ ul#nav li.current a {
 }
 
 .sillis-linkki {
-    animation: tilt-n-move-shaking 0.25s infinite;
+    animation: tilt-n-move-shaking 0.35s infinite;
     color: var(--background);
     padding: 1rem;
     font-size: 2rem;
@@ -383,7 +333,8 @@ ul#nav li.current a {
     color: var(--sillis-header);
     text-align: center;
     width: 80%;
-    margin: 20px auto;
+    margin: 4rem auto;
+    white-space: pre-line;
 }
 
 @keyframes tilt-n-move-shaking {
@@ -419,9 +370,6 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #etiketti {
-    height: max-content;
-    padding: 6rem 0;
-    overflow: hidden;
     background: var(--etiketti-bg);
 }
 
@@ -430,7 +378,7 @@ ul#nav li.current a {
 }
 
 #etiketti h3 {
-    font-family: "librebaskerville", serif;
+    font-family: "librebaskerville-italic", serif;
     color: var(--gold);
 }
 
@@ -558,9 +506,6 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #ilmo {
-    height: max-content;
-    padding: 6rem 0;
-    overflow: hidden;
     background: var(--etiketti-bg);
 }
 
@@ -711,38 +656,41 @@ footer a:focus {
 
 /* copyright */
 footer .copyright {
+    color: var(--gray);
     margin: 0;
     padding: 0;
 }
 
 footer .copyright li {
-    display: inline-block;
-    margin: 0;
+    display: block;
+    margin: 0 auto;
     padding: 0;
     line-height: 24px;
+    text-align: center;
+}
+
+footer .copyright li img {
+    height: 2.5rem;
+    width: auto;
+    margin-top: 5px;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
 }
 
 .ie footer .copyright li {
     display: inline;
 }
 
-footer .copyright li:before {
-    content: "\2022";
-    padding-left: 10px;
-    padding-right: 10px;
-    color: #095153;
-}
-
-footer .copyright li:first-child:before {
-    display: none;
-}
-
-footer .sponsors {
-    color: var(--gray-darker);
-}
-
-footer .sponsors h2 {
-    color: var(--gray-darker);
+footer .copyright:hover li img, footer .copyright:focus, li img footer .copyright:active li img {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
 }
 
 /* Go To Top Button */
