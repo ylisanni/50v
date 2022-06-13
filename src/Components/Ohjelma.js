@@ -26,7 +26,7 @@ class Ohjelma extends Component {
                                         </h4>
                                         <div className="ohjelma-sponsor-images">
                                             <a className="ohjelma-sponsor" rel="noreferrer" href="https://www.mehilainen.fi/" target="_blank">
-                                                <img alt="Mehiläinen logo" src="images/companies/colored/mehilainen.png" />
+                                                <img alt="Mehiläinen logo" src="images/companies/webp/mehilainen.webp" />
                                             </a>
                                         </div>
                                     </div>
@@ -49,11 +49,11 @@ class Ohjelma extends Component {
                                             Main Event sponsors:
                                         </h4>
                                         <div className="ohjelma-sponsor-images">
-                                            <a className="ohjelma-sponsor" rel="noreferrer" href="https://nitor.com/" target="_blank">
-                                                <img alt="Nitor logo" src="images/companies/colored/nitor.png" />
+                                            <a className="ohjelma-sponsor main-sponsor" rel="noreferrer" href="https://nitor.com/" target="_blank">
+                                                <img alt="Nitor logo" src="images/companies/webp/nitor.webp" />
                                             </a>
                                             <a className="ohjelma-sponsor" rel="noreferrer" href="https://www.solita.fi/" target="_blank">
-                                                <img alt="Solita logo" src="images/companies/colored/solita.png" />
+                                                <img alt="Solita logo" src="images/companies/webp/solita.webp" />
                                             </a>
                                         </div>
                                     </div>
@@ -73,7 +73,7 @@ class Ohjelma extends Component {
                                         <div className="ohjelma-sponsor-images">
                                             <a className="ohjelma-sponsor"
                                                rel="noreferrer" href="https://www.sofokus.com/" target="_blank">
-                                                <img alt="Sofokus logo" src="images/companies/colored/sofokus.png" />
+                                                <img alt="Sofokus logo" src="images/companies/webp/sofokus.webp" />
                                             </a>
                                         </div>
                                     </div>
@@ -105,7 +105,7 @@ class Ohjelma extends Component {
                                         <div className="ohjelma-sponsor-images">
                                             <a className="ohjelma-sponsor"
                                                rel="noreferrer" href="https://www.atrsoft.com/" target="_blank">
-                                                <img alt="ATR logo" src="images/companies/colored/atr.png" />
+                                                <img alt="ATR logo" src="images/companies/webp/atr.webp" />
                                             </a>
                                         </div>
                                     </div>
@@ -134,7 +134,7 @@ class Ohjelma extends Component {
                                         <div className="ohjelma-sponsor-images">
                                             <a className="ohjelma-sponsor"
                                                rel="noreferrer" href="https://www.mehilainen.fi/" target="_blank">
-                                                <img alt="Mehiläinen logo" src="images/companies/colored/mehilainen.png" />
+                                                <img alt="Mehiläinen logo" src="images/companies/webp/mehilainen.webp" />
                                             </a>
                                         </div>
                                     </div>
@@ -159,11 +159,11 @@ class Ohjelma extends Component {
                                             Pääjuhlassa mukana:
                                         </h4>
                                         <div className="ohjelma-sponsor-images">
-                                            <a className="ohjelma-sponsor" rel="noreferrer" href="https://nitor.com/" target="_blank">
-                                                <img alt="Nitor logo" src="images/companies/colored/nitor.png" />
+                                            <a className="ohjelma-sponsor main-sponsor" rel="noreferrer" href="https://nitor.com/" target="_blank">
+                                                <img alt="Nitor logo" src="images/companies/webp/nitor.webp" />
                                             </a>
                                             <a className="ohjelma-sponsor" rel="noreferrer" href="https://www.solita.fi/" target="_blank">
-                                                <img alt="Solita logo" src="images/companies/colored/solita.png" />
+                                                <img alt="Solita logo" src="images/companies/webp/solita.webp" />
                                             </a>
                                         </div>
                                     </div>
@@ -181,7 +181,7 @@ class Ohjelma extends Component {
                                         <div className="ohjelma-sponsor-images">
                                             <a className="ohjelma-sponsor"
                                                rel="noreferrer" href="https://www.sofokus.com/" target="_blank">
-                                                <img alt="Sofokus logo" src="images/companies/colored/sofokus.png" />
+                                                <img alt="Sofokus logo" src="images/companies/webp/sofokus.webp" />
                                             </a>
                                         </div>
                                     </div>
@@ -216,7 +216,7 @@ class Ohjelma extends Component {
                                         <div className="ohjelma-sponsor-images">
                                             <a className="ohjelma-sponsor"
                                                rel="noreferrer" href="https://www.atrsoft.com/" target="_blank">
-                                                <img alt="ATR logo" src="images/companies/colored/atr.png" />
+                                                <img alt="ATR logo" src="images/companies/webp/atr.webp" />
                                             </a>
                                         </div>
                                     </div>
@@ -241,7 +241,7 @@ class Ohjelma extends Component {
                                         <div className="ohjelma-sponsor-images">
                                             <a className="ohjelma-sponsor"
                                                rel="noreferrer" href="https://gofore.com/" target="_blank">
-                                                <img alt="Gofore logo" src="images/companies/colored/gofore.png" />
+                                                <img alt="Gofore logo" src="images/companies/webp/gofore.webp" />
                                             </a>
                                         </div>
                                     </div>
@@ -263,7 +263,7 @@ class Ohjelma extends Component {
                                         <div className="ohjelma-sponsor-images">
                                             <a className="ohjelma-sponsor"
                                                rel="noreferrer" href="https://gofore.com/" target="_blank">
-                                                <img alt="Gofore logo" src="images/companies/colored/gofore.png" />
+                                                <img alt="Gofore logo" src="images/companies/webp/gofore.webp" />
                                             </a>
                                         </div>
                                     </div>

@@ -412,6 +412,10 @@
         margin: 1rem 0;
     }
 
+    .main-sponsor{
+        max-height: 13rem !important;
+    }
+
     .ohjelma-sponsor img{
         padding: 0 !important;
         object-position: center !important;

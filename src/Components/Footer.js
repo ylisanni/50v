@@ -14,7 +14,7 @@ class Footer extends Component {
                                 <li>
                                     <img
                                         className="asteriskilogo"
-                                        src="/images/icon-512x512.png"
+                                        src="/images/icon-512x512.webp"
                                         alt="Asteriski logo"
                                     />
                                 </li>

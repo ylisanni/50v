@@ -5,20 +5,20 @@ class Footer extends Component {
     Sponsor (props) {
         return (
             <a rel="noreferrer" href={props.sponsor_url} target="_blank">
-                <img alt={`${props.sponsor_name} -logo`} src={`images/companies/colored/${props.sponsor_image_url}`} />
+                <img alt={`${props.sponsor_name} -logo`} src={`images/companies/webp/${props.sponsor_image_url}`} />
             </a>
         )
     };
 
     render () {
         const sponsors = [
-            { sponsor_name: 'Nitor', sponsor_url: 'https://nitor.com/', sponsor_image_url: 'nitor.png' },
-            { sponsor_name: 'ATR Soft', sponsor_url: 'https://www.atrsoft.com/', sponsor_image_url: 'atr.png' },
-            { sponsor_name: 'Sofokus', sponsor_url: 'https://www.sofokus.com/', sponsor_image_url: 'sofokus.png' },
-            { sponsor_name: 'Solita', sponsor_url: 'https://www.solita.fi/', sponsor_image_url: 'solita.png' },
-            { sponsor_name: 'Mehiläinen', sponsor_url: 'https://www.mehilainen.fi/', sponsor_image_url: 'mehilainen.png' },
-            { sponsor_name: 'Gofore', sponsor_url: 'https://gofore.com/', sponsor_image_url: 'gofore.png' },
-            { sponsor_name: 'Tivia', sponsor_url: 'https://tivia.fi/', sponsor_image_url: 'tivia.png' },
+            { sponsor_name: 'Nitor', sponsor_url: 'https://nitor.com/', sponsor_image_url: 'nitor.webp' },
+            { sponsor_name: 'ATR Soft', sponsor_url: 'https://www.atrsoft.com/', sponsor_image_url: 'atr.webp' },
+            { sponsor_name: 'Sofokus', sponsor_url: 'https://www.sofokus.com/', sponsor_image_url: 'sofokus.webp' },
+            { sponsor_name: 'Solita', sponsor_url: 'https://www.solita.fi/', sponsor_image_url: 'solita.webp' },
+            { sponsor_name: 'Mehiläinen', sponsor_url: 'https://www.mehilainen.fi/', sponsor_image_url: 'mehilainen.webp' },
+            { sponsor_name: 'Gofore', sponsor_url: 'https://gofore.com/', sponsor_image_url: 'gofore.webp' },
+            { sponsor_name: 'Tivia', sponsor_url: 'https://tivia.fi/', sponsor_image_url: 'tivia.webp' },
         ]
         sponsors.sort(() => Math.random() - 0.5)
 

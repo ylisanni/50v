@@ -8,7 +8,7 @@ class Tietoa extends Component {
                     <div className="three columns table-cell asteriskilogo-container">
                         <img
                             className="asteriskilogo"
-                            src="/images/asteriskilogo.png"
+                            src="/images/asteriskilogo.webp"
                             alt="Asteriski logo"
                         />
                     </div>

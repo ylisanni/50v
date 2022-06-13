@@ -86,7 +86,7 @@ class Header extends Component {
                         <Fade bottom duration={1200}>
                             <img
                                 alt="main logo"
-                                src="/images/basic-gold-logo-may22.png"
+                                src="/images/basic-gold-logo-may22.webp"
                                 className="main-logo"
                             />
                         </Fade>
