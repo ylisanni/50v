@@ -533,7 +533,7 @@ ul#nav li.current a {
     color: #ebeeee;
     display: inline-block;
     float: left;
-    width: 26%;
+    width: 100%;
 }
 
 #ilmo input,
@@ -542,12 +542,11 @@ ul#nav li.current a {
     padding: 10px 20px;
     color: #eee;
     background: #373233;
-    margin-bottom: 42px;
     border: 0;
     outline: none;
     font-size: 15px;
     line-height: 24px;
-    width: 65%;
+    width: 100%;
 }
 
 #ilmo input:focus,

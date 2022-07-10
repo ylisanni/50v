@@ -182,3 +182,12 @@ header a {
 .ohjelma:last-of-type {
     margin-bottom: 0;
 }
+
+.ilmoformi {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.error {
+    color: red;
+}

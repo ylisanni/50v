@@ -20,7 +20,13 @@ class Ilmo extends Component {
   render() {
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
       if (completed) {
-        return <Ilmoformi />;
+        return (
+          <Ilmoformi
+            lang={this.props.data.lang}
+            registrationStatus={this.state.registrationStatus}
+            invited={this.props.data.kutsuvieras}
+          />
+        );
       } else {
         return (
           <Laskuri
@@ -98,9 +104,7 @@ class Ilmo extends Component {
               )}
             </div>
             <div className="row">
-              <div className="columns twelve">
-                <Countdown date={this.state.startDate} renderer={renderer} />
-              </div>
+              <Countdown date={this.state.startDate} renderer={renderer} />
             </div>
           </section>
         )}
@@ -109,7 +113,6 @@ class Ilmo extends Component {
   }
   async componentDidMount() {
     try {
-      console.log(this.state.invited);
       let ilmo = await api.get();
       ilmo = ilmo.data;
       let startDate = ilmo.main_start_date;
@@ -135,7 +138,7 @@ class Ilmo extends Component {
           success: false,
           isLoading: false,
           startDate: new Date(2022, 7, 18, 13, 37),
-          registrationStatus: 'NOT_STARTED',
+          registrationStatus: "NOT_STARTED",
         },
       });
     }

@@ -1,80 +1,101 @@
-import React, { Component } from "react";
+import React from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 
-class Ilmoformi extends Component {
-  render() {
-    return (
-      <div>
-        <form action="" method="post" id="contactForm" name="contactForm">
-          <fieldset>
-            <div>
-              <label htmlFor="contactName">
-                Name <span className="required">*</span>
-              </label>
-              <input
-                type="text"
-                defaultValue=""
-                size="35"
-                id="contactName"
-                name="contactName"
-                onChange={this.handleChange}
-              />
-            </div>
+const schema = yup
+  .object({
+    first_name: yup.string().required(),
+    last_name: yup.string().required(),
+    starting_year: yup.number().min(1900).max(2022).integer(),
+    email: yup.string().email(),
+    is_asteriski_member: yup.boolean(),
+    is_alcohol_free: yup.boolean(),
+    is_vege: yup.boolean(),
+    excretory_diets: yup.string(),
+    is_attending_sillis: yup.boolean(),
+    avecs_name: yup.string(),
+    other_info: yup.string(),
+    is_greeting: yup.boolean(),
+    party_representing: yup.string(),
+    is_consenting: yup.boolean(),
+  })
+  .required();
 
-            <div>
-              <label htmlFor="contactEmail">
-                Email <span className="required">*</span>
-              </label>
-              <input
-                type="text"
-                defaultValue=""
-                size="35"
-                id="contactEmail"
-                name="contactEmail"
-                onChange={this.handleChange}
-              />
-            </div>
+export default function Ilmoformi() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
+  const onSubmit = (data) => console.log(data);
+  return (
+    <div className="ilmoformi">
+      <form onSubmit={handleSubmit(onSubmit)} name="ilmoformi">
+        <div className="row">
+          <div className="column six">
+            <label>
+              Etunimi <span className="required">*</span>
+              <input {...register("first_name")} />
+            </label>
+          </div>
 
-            <div>
-              <label htmlFor="contactSubject">Subject</label>
-              <input
-                type="text"
-                defaultValue=""
-                size="35"
-                id="contactSubject"
-                name="contactSubject"
-                onChange={this.handleChange}
-              />
-            </div>
-
-            <div>
-              <label htmlFor="contactMessage">
-                Message <span className="required">*</span>
-              </label>
-              <textarea
-                cols="50"
-                rows="15"
-                id="contactMessage"
-                name="contactMessage"
-              ></textarea>
-            </div>
-
-            <div>
-              <button className="submit">Submit</button>
-              <span id="image-loader">
-                <img alt="" src="images/loader.gif" />
-              </span>
-            </div>
-          </fieldset>
-        </form>
-
-        <div id="message-warning"> Error boy</div>
-        <div id="message-success">
-          <i className="fa fa-check"></i>Your message was sent, thank you!
-          <br />
+          <div className="column six">
+            <label>
+              Sukunimi <span className="required">*</span>
+              <input {...register("last_name")} />
+            </label>
+          </div>
         </div>
-      </div>
-    );
-  }
-}
 
-export default Ilmoformi;
+        <div className="row">
+          <div className="column six">
+            <label>
+              Opiskelujen aloitusvuosi
+              <input type="numer" {...register("starting_year")} />
+            </label>
+          </div>
+
+          <div className="column six">
+            <label>
+              Sähköposti <span className="required">*</span>
+              <input {...register("email")} />
+            </label>
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="column six">
+            <label>
+              Oletko Asteriskin jäsen?
+              <input type="numer" {...register("is_asteriski_member")} />
+            </label>
+          </div>
+
+          <div className="column six">
+            <label>
+              Alkoholiton / Alkoholillinen <span className="required">*</span>
+              <input {...register("is_alcohol_free")} />
+            </label>
+          </div>
+        </div>
+
+        <div>
+          <input className="submit" type="submit" />
+          <span id="image-loader">
+            <img alt="" src="images/loader.gif" />
+          </span>
+        </div>
+      </form>
+
+      <div id="message-warning"> Error</div>
+      <div id="message-success">
+        <i className="fa fa-check"></i>Your message was sent, thank you!
+        <br />
+      </div>
+    </div>
+  );
+}
