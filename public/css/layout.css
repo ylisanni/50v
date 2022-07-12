@@ -745,3 +745,18 @@ footer .copyright:hover li img, footer .copyright:focus, li img footer .copyrigh
 #go-top a:hover {
     background-color: var(--green);
 }
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid var(--green);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

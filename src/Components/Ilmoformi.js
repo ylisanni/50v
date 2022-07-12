@@ -26,7 +26,7 @@ const schema = yup.object({
   avecs_name: yup.string(),
   other_info: yup.string(),
   show_name: yup.string().required().oneOf(["yes", "no"]).default("yes"),
-  is_greeting: yup.string().required().oneOf(["yes", "no"]),
+  is_greeting: yup.string().oneOf(["yes", "no"]),
   party_representing: yup.string(),
   is_consenting: yup.string().required().oneOf(["yes", "no"]),
 });
@@ -39,20 +39,47 @@ export default function Ilmoformi(props) {
   } = useForm({
     resolver: yupResolver(schema),
   });
+
   const [loading, setLoading] = useState(false);
+
   const onSubmit = async (data) => {
-    console.log(data);
     setLoading(true);
     try {
-      const resp = await api.post(data);
-      setLoading(false);
+      let req = {
+        first_name: data.first_name,
+        last_name: data.last_name,
+        email: data.email,
+        is_asteriski_member: data.is_asteriski_member === "yes" ? true : false,
+        is_alcohol_free: data.is_alcohol_free === "Alkoholiton" ? true : false,
+        menu: data.menu,
+        excretory_diets: data.excretory_diets,
+        is_attending_sillis: data.is_attending_sillis === "yes" ? true : false,
+        avecs_name: data.avecs_name,
+        other_info: data.other_info,
+        show_name: data.show_name === "yes" ? true : false,
+        is_consenting: data.is_consenting === "yes" ? true : false,
+      };
+      if (data.starting_year !== null) {
+        req["starting_year"] = parseInt(data.starting_year);
+      }
+      if (props.invited) {
+        req["is_greeting"] = data.is_greeting === "yes" ? true : false;
+        req["party_representing"] = data.party_representing;
+      }
+      console.log(req);
+      const resp = await api.post("/", req);
     } catch (e) {
+      console.log(e.response);
+    } finally {
       setLoading(false);
     }
   };
   return (
     <div className="ilmoformi">
-      <form onSubmit={handleSubmit(onSubmit)} name="ilmoformi">
+      <form
+        onSubmit={handleSubmit(async (data) => await onSubmit(data))}
+        name="ilmoformi"
+      >
         <div className="row">
           <div className="column six">
             <label>
@@ -493,13 +520,15 @@ export default function Ilmoformi(props) {
           </div>
         </div>
 
+        {errors ? (
+          <div className="apiErrors">{JSON.stringify(errors)}</div>
+        ) : null}
+
         <div className="text-center">
           <button className="submit" type="submit">
             <>
               {loading ? (
-                <span className="loader">
-                  <img alt="" src="images/loader.gif" />
-                </span>
+                <div className="loader"></div>
               ) : props.lang === "en" ? (
                 "Register"
               ) : (
@@ -510,11 +539,52 @@ export default function Ilmoformi(props) {
         </div>
       </form>
 
-      <div id="message-warning"> Error</div>
-      <div id="message-success">
-        <i className="fa fa-check"></i>Your message was sent, thank you!
-        <br />
-      </div>
+      {props.fitting ? (
+        <div className="participants">
+          <table>
+            <thead>
+              <tr>
+                <th>{props.lang === "en" ? "First name" : "Etunimi"}</th>
+                <th>{props.lang === "en" ? "Last name" : "Sukunimi"}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {props.fitting.map(function (object, i) {
+                return (
+                  <tr key={i}>
+                    <td>{object.first_name}</td>
+                    <td>{object.last_name}</td>
+                  </tr>
+                );
+              })}
+
+              {props.reserve ? (
+                <>
+                  <tr>
+                    <td>{props.lang === "en" ? "Reserve" : "Varasijalla"}</td>
+                  </tr>
+                  {props.reserve.map(function (object, i) {
+                    return (
+                      <tr key={i}>
+                        <td>{object.first_name}</td>
+                        <td>{object.last_name}</td>
+                      </tr>
+                    );
+                  })}
+                </>
+              ) : null}
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>
+                  {props.lang === "en" ? "Total" : "Yhteensä"}:{" "}
+                  {props.fitting.length}
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      ) : null}
     </div>
   );
 }

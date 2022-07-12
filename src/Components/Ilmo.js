@@ -25,6 +25,8 @@ class Ilmo extends Component {
             lang={this.props.data.lang}
             registrationStatus={this.state.registrationStatus}
             invited={this.props.data.kutsuvieras}
+            fitting={this.state.fitting}
+            reserve={this.state.reserve}
           />
         );
       } else {
