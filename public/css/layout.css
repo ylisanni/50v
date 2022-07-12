@@ -532,7 +532,6 @@ ul#nav li.current a {
     margin: 12px 0;
     color: #ebeeee;
     display: inline-block;
-    float: left;
     width: 100%;
 }
 
@@ -547,6 +546,20 @@ ul#nav li.current a {
     font-size: 15px;
     line-height: 24px;
     width: 100%;
+}
+
+#ilmo .radiot input {
+    width: auto;
+}
+
+#ilmo .radiothing {
+    margin-left: 0.7rem;
+    font: 15px/24px "opensans-bold", sans-serif;
+    color: #ebeeee;
+}
+
+#ilmo .valError {
+    color: #c41647;
 }
 
 #ilmo input:focus,
@@ -566,7 +579,7 @@ ul#nav li.current a {
     height: auto;
     display: inline-block;
     border-radius: 0px;
-    margin-left: 26%;
+    width: 100%;
 }
 
 #ilmo button.submit:hover {
@@ -575,8 +588,17 @@ ul#nav li.current a {
 }
 
 #ilmo span.required {
-    color: #0762f9;
+    color: #2c8f43;
     font-size: 13px;
+}
+
+#ilmo .check input {
+    width: auto;
+    margin-right: 0.7rem;
+}
+
+#ilmo .radiot label {
+    margin: 0;
 }
 
 #message-warning,
