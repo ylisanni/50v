@@ -535,9 +535,9 @@ ul#nav li.current a {
     width: 100%;
 }
 
-#ilmo input,
-#ilmo textarea,
-#ilmo select {
+#ilmo .ilmoformi input,
+#ilmo .ilmoformi textarea,
+#ilmo .ilmoformi select {
     padding: 10px 20px;
     color: #eee;
     background: #373233;
@@ -562,14 +562,14 @@ ul#nav li.current a {
     color: #c41647;
 }
 
-#ilmo input:focus,
-#ilmo textarea:focus,
-#ilmo select:focus {
+#ilmo .ilmoformi input:focus,
+#ilmo .ilmoformi textarea:focus,
+#ilmo .ilmoformi select:focus {
     color: #fff;
     background-color: #0762f9;
 }
 
-#ilmo button.submit {
+#ilmo .ilmoformi button.submit {
     text-transform: uppercase;
     letter-spacing: 3px;
     color: #fff;
@@ -582,7 +582,7 @@ ul#nav li.current a {
     width: 100%;
 }
 
-#ilmo button.submit:hover {
+#ilmo .ilmoformi button.submit:hover {
     color: #0d0d0d;
     background: #fff;
 }
@@ -599,57 +599,6 @@ ul#nav li.current a {
 
 #ilmo .radiot label {
     margin: 0;
-}
-
-#message-warning,
-#message-success {
-    display: none;
-    background: #0f0f0f;
-    padding: 24px 24px;
-    margin-bottom: 36px;
-    width: 65%;
-    margin-left: 26%;
-}
-
-#message-warning {
-    color: #d72828;
-}
-
-#message-success {
-    color: #0762f9;
-}
-
-#message-warning i,
-#message-success i {
-    margin-right: 10px;
-}
-
-#image-loader {
-    display: none;
-    position: relative;
-    left: 18px;
-    top: 17px;
-}
-
-/* Twitter Feed */
-#twitter {
-    margin-top: 12px;
-    padding: 0;
-}
-
-#twitter li {
-    margin: 6px 0px 12px 0;
-    line-height: 30px;
-}
-
-#twitter li span {
-    display: block;
-}
-
-#twitter li b a {
-    font: 13px/36px "opensans-regular", Sans-serif;
-    color: #474747 !important;
-    border: none;
 }
 
 /* ------------------------------------------------------------------ */

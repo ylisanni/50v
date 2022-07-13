@@ -515,11 +515,11 @@ input::-moz-focus-inner {
 form { margin-bottom: 24px; }
 fieldset { margin-bottom: 24px; }
 
-input[type="text"],
-input[type="password"],
-input[type="email"],
-textarea,
-select {
+.ilmoformi input[type="text"],
+.ilmoformi input[type="password"],
+.ilmoformi input[type="email"],
+.ilmoformi textarea,
+.ilmoformi select {
    display: block;
    padding: 18px 15px;
    margin: 0 0 24px 0;
