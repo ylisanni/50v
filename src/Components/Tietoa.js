@@ -20,7 +20,7 @@ class Tietoa extends Component {
                                 <p>
                                     Asteriski ry celebrates its 50th anniversary with a grand
                                     annual ball on Saturday 1st of October 2022. The annual ball
-                                    begins with a cocktail party at the University of Turku. The
+                                    begins with a cocktail party at the University of Turku main building. The
                                     cocktail party is followed by the main event at Turku VPK
                                     house and after that we will continue the celebration with the
                                     after party in a secret location.
@@ -42,7 +42,7 @@ class Tietoa extends Component {
                                 <p>
                                     Asteriski ry:n 50-vuotisjuhlia juhlitaan juhlavasti lauantaina
                                     1. lokakuuta 2022. Vuosijuhlat alkavat cocktail-tilaisuudella,
-                                    joka järjestetään Turun yliopiston tiloissa.
+                                    joka järjestetään Turun yliopiston päärakennuksessa.
                                     Cocktail-tilaisuudesta siirrymme itse pääjuhlaan Turun
                                     VPK-talolle. Juhlien jatkoja vietetään salaisessa
                                     jatkopaikassa.
