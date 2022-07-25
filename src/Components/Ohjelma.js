@@ -13,7 +13,7 @@ class Ohjelma extends Component {
                                         <h2>The program</h2>
                                         <h3>Cocktail Party</h3>
                                         <p>
-                                            The cocktail party will be held at the University starting at
+                                            The cocktail party will be held at the University main building (Henrikinkatu 2, 20500 Turku) starting at
                                             14:30. The cocktail party consists of welcome toast,
                                             appetizers, and greetings from invited guests. All
                                             participants of the annual ball are welcome to attend the
@@ -119,7 +119,7 @@ class Ohjelma extends Component {
                                         <h3>Cocktail-tilaisuus</h3>
                                         <p>
                                             Pääjuhlaa edeltää cocktail-tilaisuus, joka pidetään Turun
-                                            yliopiston tiloissa kello 14:30 alkaen. Cocktail-tilaisuuden
+                                            yliopiston päärakennuksessa (Henrikinkatu 2, 20500 Turku) kello 14:30 alkaen. Cocktail-tilaisuuden
                                             ohjelmaan kuuluu tervetuliaismalja, cocktailpalat sekä
                                             kutsuvieraiden esittämät tervehdykset Asteriskille. Kaikki
                                             vuosijuhlaosallistujat ovat tervetulleita seuraamaan
