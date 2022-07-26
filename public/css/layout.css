@@ -712,4 +712,17 @@ footer .copyright:hover li img, footer .copyright:focus, li img footer .copyrigh
 
 #menu {
     margin-top: 42px;
+    text-align: center;
+}
+
+#menu h3 {
+    text-decoration: underline;
+}
+
+#menu h4 {
+    font-size: 1.4rem;
+}
+
+#menu p {
+    font-size: 1.3rem;
 }

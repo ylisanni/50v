@@ -11,56 +11,75 @@ class Menu extends Component {
                 <h2>Menu</h2>
                 <h3>Starter</h3>
                 <p>
-                  Jerusalem artichoke soup, herbal oil, archipelago bread,
-                  garlic spread
+                  <b>Jerusalem artichoke soup</b>
+                  <br />
+                  Herbal oil, archipelago bread, garlic spread
                 </p>
 
                 <h3>Main course</h3>
+                <h4>Meat</h4>
                 <p>
-                  <b>Meat:</b> overcooked beef breast and red wine sauce,
+                  <b>Overcooked beef breast and red wine sauce</b>
+                  <br />
                   roasted small potatoes, baked root vegetables, pickled mustard
                   seeds, vegetable chips
                 </p>
                 <p>
-                  <b>Fish:</b> blood orange salmon, citrus sauce, roasted small
-                  potatoes, baked root vegetables, pickled mustard seeds,
-                  vegetable chips
+                  <h4>Fish</h4>
+                  <b>Blood orange salmon, citrus sauce</b>
+                  <br /> roasted small potatoes, baked root vegetables, pickled
+                  mustard seeds, vegetable chips
                 </p>
+                <h4>Vegan</h4>
                 <p>
-                  <b>Vegan:</b> melanzane, country bread, baked root vegetables,
-                  pickled mustard seeds, vegetable chips
+                  <b>Melanzane</b>
+                  <br /> country bread, baked root vegetables, pickled mustard
+                  seeds, vegetable chips
                 </p>
 
                 <h3>Dessert</h3>
-                <p>Pineapple-passion chocolate cake, coffee/tea</p>
+                <p>
+                  <b>Pineapple-passion chocolate cake</b>
+                  <br /> coffee/tea
+                </p>
               </>
             ) : (
               <>
                 <h2>Menu</h2>
                 <h3>Alkuruoka</h3>
                 <p>
-                  Maa-artisokkakeittoa yrttiöljyä, saaristolaisleipää,
-                  valkosipulilevite
+                  <b>Maa-artisokkakeitto</b>
+                  <br />
+                  yrttiöljyä, saaristolaisleipää, valkosipulilevite
                 </p>
 
                 <h3>Pääruoka</h3>
+                <h4>Liha</h4>
                 <p>
-                  <b>Liha:</b> ylikypsää naudan rintaa ja punaviinikastiketta,
+                  <b>Ylikypsää naudan rintaa ja punaviinikastiketta</b>
+                  <br />
                   paahdetut pikkuperunat, uunijuurekset pikkelöidyt
                   sinapinsiemenet, kasvischipsit
                 </p>
+                <h4>Kala</h4>
                 <p>
-                  <b>Kala:</b> veriappelsiinilohta, citruskastiketta, paahdetut
-                  pikkuperunat, uunijuurekset pikkelöidyt, sinapinsiemenet,
-                  kasvischipsit
+                  <b>Veriappelsiinilohta, citruskastiketta</b>
+                  <br /> paahdetut pikkuperunat, uunijuurekset pikkelöidyt,
+                  sinapinsiemenet, kasvischipsit
                 </p>
+                <h4>Vegaani</h4>
                 <p>
-                  <b>Vegaani:</b> melanzane, maalaisleipää, uunijuurekset
-                  pikkelöidyt sinapinsiemenet, kasvischipsit
+                  <b>Melanzane</b>
+                  <br />
+                  maalaisleipää, uunijuurekset pikkelöidyt sinapinsiemenet,
+                  kasvischipsit
                 </p>
 
                 <h3>Jälkiruoka</h3>
-                <p>Ananas-passionsuklaakakkua, kahvi/tee </p>
+                <p>
+                  <b>Ananas-passionsuklaakakkua</b>
+                  <br /> kahvi/tee
+                </p>
               </>
             )}
           </div>
