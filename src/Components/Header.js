@@ -59,7 +59,7 @@ class Header extends Component {
 
                         <li>
                             <a className="smoothscroll" href="#ilmo">
-                                {this.props.data.lang === 'en' ? 'Sign Up' : 'Ilmoittautuminen'}
+                                {this.props.data.lang === 'en' ? 'Sign Up' : 'Ilmoittaudu'}
                             </a>
                         </li>
 
