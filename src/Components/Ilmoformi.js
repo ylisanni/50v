@@ -272,7 +272,7 @@ export default function Ilmoformi(props) {
                         value="VG"
                       />
                       <span className="radiothing">
-                        {props.lang === "en" ? "Vegetarian" : "Kasvis"}
+                        {props.lang === "en" ? "Vegan" : "Vagaani"}
                       </span>
                     </label>
                   </div>
