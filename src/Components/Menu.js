@@ -8,44 +8,59 @@ class Menu extends Component {
           <div className="twelve columns">
             {this.props.data.lang === "en" ? (
               <>
-                <h2>Menu EN</h2>
-                <p>Menu in english</p>
-                <ul>
-                  <li> Starter
-                    Jerusalem artichoke soup, herbal oil, archipelago Bread, garlic spread </li>
-                  <li>Main course
-                    Meat Overcooked beef breast and red wine sauce,
-                    roasted small potatoes, baked root vegetables, pickled mustard seeds, vegetable chips
+                <h2>Menu</h2>
+                <h3>Starter</h3>
+                <p>
+                  Jerusalem artichoke soup, herbal oil, archipelago bread,
+                  garlic spread
+                </p>
 
-                   Fish blood orange salmon, citrus sauce,
-                    roasted small potatoes, baked root vegetables, pickled mustard seeds, vegetable chips
+                <h3>Main course</h3>
+                <p>
+                  <b>Meat:</b> overcooked beef breast and red wine sauce,
+                  roasted small potatoes, baked root vegetables, pickled mustard
+                  seeds, vegetable chips
+                </p>
+                <p>
+                  <b>Fish:</b> blood orange salmon, citrus sauce, roasted small
+                  potatoes, baked root vegetables, pickled mustard seeds,
+                  vegetable chips
+                </p>
+                <p>
+                  <b>Vegan:</b> melanzane, country bread, baked root vegetables,
+                  pickled mustard seeds, vegetable chips
+                </p>
 
-                   Vegan melanzane, country bread, baked root vegetables, pickled mustard seeds, vegetable chips </li>
-
-                   <li>Dessert
-                   pineapple-passion chocolate cake, coffee/tea </li>
-                </ul>
+                <h3>Dessert</h3>
+                <p>Pineapple-passion chocolate cake, coffee/tea</p>
               </>
             ) : (
               <>
-                <h2>Menu FI</h2>
-                <p>Menu suomeksi</p>
-                <ul>
-                  <li> Alkuruoka
-                    maa-artisokkakeittoa yrttiöljyä, saaristolaisleipää, valkosipulilevite </li>
-                  <li>Pääruoka 
-                    Liha ylikypsää naudan rintaa ja punaviinikastiketta,
-                    paahdetut pikkuperunat, uunijuurekset pikkelöidyt sinapinsiemenet, kasvischipsit 
+                <h2>Menu</h2>
+                <h3>Alkuruoka</h3>
+                <p>
+                  Maa-artisokkakeittoa yrttiöljyä, saaristolaisleipää,
+                  valkosipulilevite
+                </p>
 
-                    Kala veriappelsiinilohta, citruskastiketta, paahdetut pikkuperunat, uunijuurekset pikkelöidyt,
-                    sinapinsiemenet, kasvischipsit
+                <h3>Pääruoka</h3>
+                <p>
+                  <b>Liha:</b> ylikypsää naudan rintaa ja punaviinikastiketta,
+                  paahdetut pikkuperunat, uunijuurekset pikkelöidyt
+                  sinapinsiemenet, kasvischipsit
+                </p>
+                <p>
+                  <b>Kala:</b> veriappelsiinilohta, citruskastiketta, paahdetut
+                  pikkuperunat, uunijuurekset pikkelöidyt, sinapinsiemenet,
+                  kasvischipsit
+                </p>
+                <p>
+                  <b>Vegaani:</b> melanzane, maalaisleipää, uunijuurekset
+                  pikkelöidyt sinapinsiemenet, kasvischipsit
+                </p>
 
-                    Vegaani melanzane, maalaisleipää, uunijuurekset pikkelöidyt sinapinsiemenet, kasvischipsit </li>
-
-                   <li>Jälkiruoka
-                   ananas-passionsuklaakakkua, kahvi/tee </li>
-          
-                </ul>
+                <h3>Jälkiruoka</h3>
+                <p>Ananas-passionsuklaakakkua, kahvi/tee </p>
               </>
             )}
           </div>
