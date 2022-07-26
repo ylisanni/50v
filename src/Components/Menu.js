@@ -26,7 +26,7 @@ class Menu extends Component {
                 </p>
                 <p>
                   <h4>Fish</h4>
-                  <b>Blood orange salmon, citrus sauce</b>
+                  <b>Blood orange salmon and citrus sauce</b>
                   <br /> roasted small potatoes, baked root vegetables, pickled
                   mustard seeds, vegetable chips
                 </p>
@@ -58,21 +58,21 @@ class Menu extends Component {
                 <p>
                   <b>Ylikypsää naudan rintaa ja punaviinikastiketta</b>
                   <br />
-                  paahdetut pikkuperunat, uunijuurekset pikkelöidyt
-                  sinapinsiemenet, kasvischipsit
+                  paahdetut pikkuperunat, uunijuurekset, pikkelöidyt
+                  sinapinsiemenet, kasvissipsit
                 </p>
                 <h4>Kala</h4>
                 <p>
-                  <b>Veriappelsiinilohta, citruskastiketta</b>
-                  <br /> paahdetut pikkuperunat, uunijuurekset pikkelöidyt,
-                  sinapinsiemenet, kasvischipsit
+                  <b>Veriappelsiinilohta ja sitruskastiketta</b>
+                  <br /> paahdetut pikkuperunat, uunijuurekset, pikkelöidyt
+                  sinapinsiemenet, kasvissipsit
                 </p>
                 <h4>Vegaani</h4>
                 <p>
                   <b>Melanzane</b>
                   <br />
-                  maalaisleipää, uunijuurekset pikkelöidyt sinapinsiemenet,
-                  kasvischipsit
+                  maalaisleipää, uunijuurekset, pikkelöidyt sinapinsiemenet,
+                  kasvissipsit
                 </p>
 
                 <h3>Jälkiruoka</h3>
