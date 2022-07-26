@@ -709,3 +709,7 @@ footer .copyright:hover li img, footer .copyright:focus, li img footer .copyrigh
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+#menu {
+    margin-top: 42px;
+}
