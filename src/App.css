@@ -191,3 +191,7 @@ header a {
 .error {
     color: red;
 }
+
+.apiErrors {
+    color: red;
+}
