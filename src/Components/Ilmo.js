@@ -19,7 +19,7 @@ class Ilmo extends Component {
   }
   render() {
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
-      if (true) {
+      if (completed) {
         return (
           <Ilmoformi
             lang={this.props.data.lang}
