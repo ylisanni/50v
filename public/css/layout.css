@@ -530,7 +530,7 @@ ul#nav li.current a {
 #ilmo label {
     font: 15px/24px "opensans-bold", sans-serif;
     margin: 12px 0;
-    color: #ebeeee;
+    color: var(--gold);
     display: inline-block;
     width: 100%;
 }
@@ -539,7 +539,7 @@ ul#nav li.current a {
 #ilmo .ilmoformi textarea,
 #ilmo .ilmoformi select {
     padding: 10px 20px;
-    color: #eee;
+    color: var(--gray-darker);
     background: #373233;
     border: 0;
     outline: none;
@@ -553,28 +553,29 @@ ul#nav li.current a {
 }
 
 #ilmo .radiothing {
-    margin-left: 0.7rem;
+    margin-left: 25px;
     font: 15px/24px "opensans-bold", sans-serif;
-    color: #ebeeee;
+    color: var(--gray-darker);
 }
 
-#ilmo .valError {
-    color: #c41647;
+#ilmo .valError, #ilmo  .apiErrors{
+    font: 1.5rem/3rem 'opensans-regular', sans-serif;
+    color: var(--sillis-header);
+    font-weight: bold;
 }
 
 #ilmo .ilmoformi input:focus,
 #ilmo .ilmoformi textarea:focus,
 #ilmo .ilmoformi select:focus {
-    color: #fff;
-    background-color: #0762f9;
+    color: var(--gray-darker);
 }
 
 #ilmo .ilmoformi button.submit {
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #fff;
-    background: #0d0d0d;
-    border: none;
+    color: var(--gold);
+    background: var(--etiketti-bg);
+    border: 2px solid var(--gold);
     cursor: pointer;
     height: auto;
     display: inline-block;
@@ -583,12 +584,13 @@ ul#nav li.current a {
 }
 
 #ilmo .ilmoformi button.submit:hover {
-    color: #0d0d0d;
-    background: #fff;
+    color: var(--etiketti-bg);
+    background: var(--gold);
+    border-color: var(--gold);
 }
 
 #ilmo span.required {
-    color: #2c8f43;
+    color: var(--green);
     font-size: 13px;
 }
 
@@ -599,6 +601,121 @@ ul#nav li.current a {
 
 #ilmo .radiot label {
     margin: 0;
+}
+
+.radiot, .checkboxes {
+     display: block;
+     position: relative;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+ }
+/* Hide the browser's default radio button */
+.radiot input[type=radio], .check input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 20px !important;
+    width: 20px !important;
+    padding: 0 !important;
+    top: 2px;
+    left: 0;
+    margin: 0 !important;
+}
+
+/* Create a custom radio button */
+.radiot .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: var(--etiketti-bg);
+    border: 2px solid var(--gold);
+}
+
+.radiot .checkmark:hover {
+    background-color: #373233;
+}
+
+/* When the radio button is checked, add a blue background */
+.radiot input[type=radio]:checked ~ .checkmark {
+    /*background-color: var(--gold);*/
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.radiot .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiot input[type=radio]:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiot .checkmark:after {
+    top: 2px;
+    left: 2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--gold);
+}
+.checkboxes .checkboxthing{
+    margin-left: 25px;
+    font: 15px/24px "opensans-bold", sans-serif;
+    color: var(--gold);
+}
+
+/* Create a custom checkbox */
+.checkboxes .checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--etiketti-bg);
+    border: 2px solid var(--gold);
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxes .checkmark:hover {
+    background-color: #373233;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxes input:checked ~ .checkmark {
+    /*background-color: var(--gold);*/
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkboxes .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxes input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxes .checkmark:after {
+    left: 3px;
+    top: 0px;
+    width: 9px;
+    height: 14px;
+    border: solid var(--gold);
+    border-width: 0px 4px 4px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 /* ------------------------------------------------------------------ */
@@ -652,7 +769,7 @@ footer .copyright li img {
     -webkit-transition-property: transform;
     transition-property: transform;
 }
-}
+
 
 .ie footer .copyright li {
     display: inline;

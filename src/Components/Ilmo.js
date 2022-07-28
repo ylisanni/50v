@@ -19,7 +19,7 @@ class Ilmo extends Component {
   }
   render() {
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
-      if (completed) {
+      if (true) {
         return (
           <Ilmoformi
             lang={this.props.data.lang}
@@ -64,7 +64,7 @@ class Ilmo extends Component {
                   </p>
                   <p>
                     You can also attend the Annual Ball as a volunteer.{" "}
-                    <a
+                    <br/><a
                       href="https://nakit.asteriski.fi"
                       target="_blank"
                       rel="noreferrer"
@@ -92,7 +92,7 @@ class Ilmo extends Component {
                   </p>
                   <p>
                     Halutessasi voit osallistua vuosijuhlille myös nakkien
-                    muodossa.{" "}
+                    muodossa.{" "}<br/>
                     <a
                       href="https://nakit.asteriski.fi"
                       target="_blank"

@@ -234,6 +234,7 @@ export default function Ilmoformi(props) {
                           })}
                           value="yes"
                         />
+                        <span className="checkmark"></span>
                         <span className="radiothing">
                           {props.lang === "en" ? "Yes" : "Kyllä"}
                         </span>
@@ -249,6 +250,7 @@ export default function Ilmoformi(props) {
                           })}
                           value="no"
                         />
+                        <span className="checkmark"></span>
                         <span className="radiothing">
                           {props.lang === "en" ? "No" : "En"}
                         </span>
@@ -285,6 +287,7 @@ export default function Ilmoformi(props) {
                           })}
                           value="Alkoholiton"
                         />
+                        <span className="checkmark"></span>
                         <span className="radiothing">
                           {props.lang === "en" ? "Alcohol-free" : "Alkoholiton"}
                         </span>
@@ -300,6 +303,7 @@ export default function Ilmoformi(props) {
                           })}
                           value="Alkoholillinen"
                         />
+                        <span className="checkmark"></span>
                         <span className="radiothing">
                           {props.lang === "en" ? "Alcohol" : "Alkoholillinen"}
                         </span>
@@ -336,6 +340,7 @@ export default function Ilmoformi(props) {
                           })}
                           value="VG"
                         />
+                        <span className="checkmark"></span>
                         <span className="radiothing">
                           {props.lang === "en" ? "Vegan" : "Vegaani"}
                         </span>
@@ -351,6 +356,7 @@ export default function Ilmoformi(props) {
                           })}
                           value="LI"
                         />
+                        <span className="checkmark"></span>
                         <span className="radiothing">
                           {props.lang === "en" ? "Meat" : "Liha"}
                         </span>
@@ -366,6 +372,7 @@ export default function Ilmoformi(props) {
                           })}
                           value="KA"
                         />
+                        <span className="checkmark"></span>
                         <span className="radiothing">
                           {props.lang === "en" ? "Fish" : "Kala"}
                         </span>
@@ -425,6 +432,7 @@ export default function Ilmoformi(props) {
                           })}
                           value="yes"
                         />
+                        <span className="checkmark"></span>
                         <span className="radiothing">
                           {props.lang === "en" ? "Yes" : "Kyllä"}
                         </span>
@@ -440,6 +448,7 @@ export default function Ilmoformi(props) {
                           })}
                           value="no"
                         />
+                        <span className="checkmark"></span>
                         <span className="radiothing">
                           {props.lang === "en" ? "No" : "En"}
                         </span>
@@ -511,7 +520,6 @@ export default function Ilmoformi(props) {
                     <div className="radiot">
                       <label htmlFor="rad11">
                         <input
-                          checked
                           id="rad11"
                           type="radio"
                           {...register("show_name", {
@@ -519,6 +527,7 @@ export default function Ilmoformi(props) {
                           })}
                           value="yes"
                         />
+                        <span className="checkmark"></span>
                         <span className="radiothing">
                           {props.lang === "en" ? "Yes" : "Kyllä"}
                         </span>
@@ -534,6 +543,7 @@ export default function Ilmoformi(props) {
                           })}
                           value="no"
                         />
+                        <span className="checkmark"></span>
                         <span className="radiothing">
                           {props.lang === "en" ? "No" : "Ei"}
                         </span>
@@ -564,7 +574,6 @@ export default function Ilmoformi(props) {
                       <div className="radiot">
                         <label htmlFor="rad12">
                           <input
-                            checked
                             id="rad12"
                             type="radio"
                             {...register("is_greeting", {
@@ -572,6 +581,7 @@ export default function Ilmoformi(props) {
                             })}
                             value="yes"
                           />
+                          <span className="checkmark"></span>
                           <span className="radiothing">
                             {props.lang === "en" ? "Yes" : "Kyllä"}
                           </span>
@@ -587,6 +597,7 @@ export default function Ilmoformi(props) {
                             })}
                             value="no"
                           />
+                          <span className="checkmark"></span>
                           <span className="radiothing">
                             {props.lang === "en" ? "No" : "En"}
                           </span>
@@ -632,7 +643,7 @@ export default function Ilmoformi(props) {
 
             <div className="row">
               <div className="column twelve check">
-                <label>
+                <label className="checkboxes">
                   <input
                     {...register("is_consenting", {
                       onChange: (e) => clearApiError(e),
@@ -640,9 +651,12 @@ export default function Ilmoformi(props) {
                     type="checkbox"
                     value="yes"
                   />
-                  {props.lang === "en"
+                  <span className="checkmark"></span>
+                  <span className="checkboxthing">
+                    {props.lang === "en"
                     ? "I consent that the data entered is used to organize the 50th anniversary event. Data is removed after the event."
                     : "Hyväksyn, että tietojani käytetään vuosijuhlien järjestämiseen. Tiedot poistetaan vuosijuhlien jälkeen."}
+                  </span>
                   <span className="required"> *</span>
                   <p className="valError">
                     {errors.is_consenting
