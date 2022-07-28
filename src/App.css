@@ -195,3 +195,16 @@ header a {
 .apiErrors {
     color: red;
 }
+
+.posted {
+    border: 1px solid #35b233;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.posted p {
+    color: #35b233;
+    margin: 1rem;
+}

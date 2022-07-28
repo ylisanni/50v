@@ -122,7 +122,7 @@ export default function Ilmoformi(props) {
     <>
       {posted ? (
         <div className="posted">
-          <p>{props.lang === "en" ? "Thanks!" : "Kiitos!"}</p>
+          <p>{props.lang === "en" ? "Thanks for the sign up!" : "Kiitos ilmoittautumisesta!"}</p>
         </div>
       ) : (
         <div className="ilmoformi">
