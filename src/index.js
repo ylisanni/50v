@@ -10,6 +10,10 @@ render(
         path="kutsuvieras"
         element={<App lang="fi" kutsuvieras={true} />}
       />
+      <Route
+        path="kutsuvieras/en"
+        element={<App lang="en" kutsuvieras={true} />}
+      />
       <Route path="en" element={<App lang="en" kutsuvieras={false} />} />
       <Route path="*" element={<App lang="fi" kutsuvieras={false} />} />
     </Routes>

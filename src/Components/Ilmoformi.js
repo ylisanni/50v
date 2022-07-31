@@ -36,6 +36,7 @@ export default function Ilmoformi(props) {
   const {
     register,
     handleSubmit,
+    getValues,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(schema),
@@ -122,7 +123,11 @@ export default function Ilmoformi(props) {
     <>
       {posted ? (
         <div className="posted">
-          <p>{props.lang === "en" ? "Thanks for the sign up!" : "Kiitos ilmoittautumisesta!"}</p>
+          <p>
+            {props.lang === "en"
+              ? "Thanks for the sign up!"
+              : "Kiitos ilmoittautumisesta!"}
+          </p>
         </div>
       ) : (
         <div className="ilmoformi">
@@ -615,28 +620,30 @@ export default function Ilmoformi(props) {
                   </fieldset>
                 </div>
                 <div className="column six">
-                  <fieldset>
-                    <label>
-                      {props.lang === "en"
-                        ? "The entity you represent when greeting"
-                        : "Tervehdyksessä edustamasi taho(t)"}
-                      <input
-                        {...register("party_representing", {
-                          onChange: (e) => clearApiError(e),
-                        })}
-                      />
-                      <p className="valError">
-                        {errors.party_representing
-                          ? props.lang === "en"
-                            ? "Check the value"
-                            : "Tarkista arvo"
-                          : null}
-                        {apiErrors.party_representing
-                          ? apiErrors.party_representing
-                          : null}
-                      </p>
-                    </label>
-                  </fieldset>
+                  {getValues().is_greeting === "yes" ? (
+                    <fieldset>
+                      <label>
+                        {props.lang === "en"
+                          ? "The entity you represent when greeting"
+                          : "Tervehdyksessä edustamasi taho(t)"}
+                        <input
+                          {...register("party_representing", {
+                            onChange: (e) => clearApiError(e),
+                          })}
+                        />
+                        <p className="valError">
+                          {errors.party_representing
+                            ? props.lang === "en"
+                              ? "Check the value"
+                              : "Tarkista arvo"
+                            : null}
+                          {apiErrors.party_representing
+                            ? apiErrors.party_representing
+                            : null}
+                        </p>
+                      </label>
+                    </fieldset>
+                  ) : null}
                 </div>
               </div>
             ) : null}
@@ -654,8 +661,8 @@ export default function Ilmoformi(props) {
                   <span className="checkmark"></span>
                   <span className="checkboxthing">
                     {props.lang === "en"
-                    ? "I consent that the data entered is used to organize the 50th anniversary event. Data is removed after the event."
-                    : "Hyväksyn, että tietojani käytetään vuosijuhlien järjestämiseen. Tiedot poistetaan vuosijuhlien jälkeen."}
+                      ? "I consent that the data entered is used to organize the 50th anniversary event. Data is removed after the event."
+                      : "Hyväksyn, että tietojani käytetään vuosijuhlien järjestämiseen. Tiedot poistetaan vuosijuhlien jälkeen."}
                   </span>
                   <span className="required"> *</span>
                   <p className="valError">
@@ -673,7 +680,11 @@ export default function Ilmoformi(props) {
             {Object.keys(apiErrors).length !== 0 ||
             Object.keys(errors).length !== 0 ? (
               <div className="apiErrors">
-                {props.lang === "en" ? "Check the fields" : "Tarkista kentät"}
+                {apiErrors.non_field_errors
+                  ? apiErrors.non_field_errors
+                  : props.lang === "en"
+                  ? "Check the fields"
+                  : "Tarkista kentät"}
               </div>
             ) : null}
 
