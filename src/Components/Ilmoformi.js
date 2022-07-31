@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import api from "../api";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { Link } from "react-router-dom";
 import * as yup from "yup";
 import DataTable from "react-data-table-component";
 
