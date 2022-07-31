@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import api from "../api";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
+import { Link } from "react-router-dom";
 import * as yup from "yup";
 import DataTable from "react-data-table-component";
 
@@ -49,6 +50,7 @@ export default function Ilmoformi(props) {
     props.fitting.concat(props.reserve).reverse()
   );
 
+  const regStatus = props.registrationStatus;
   const reser = props.lang === "en" ? "in reserve" : "varasijalla";
   const columns = [
     {
@@ -119,9 +121,25 @@ export default function Ilmoformi(props) {
     delete errs[e.target.name];
     setApiErrors(errs);
   };
-  return (
-    <>
-      {posted ? (
+  const Participants = () => {
+    if (props.fitting) {
+      return (
+        <div className="participants">
+          <DataTable
+            columns={columns}
+            data={participants}
+            theme="dark"
+            pagination
+          />
+        </div>
+      );
+    }
+    return null;
+  };
+
+  if (posted) {
+    return (
+      <>
         <div className="posted">
           <p>
             {props.lang === "en"
@@ -129,8 +147,48 @@ export default function Ilmoformi(props) {
               : "Kiitos ilmoittautumisesta!"}
           </p>
         </div>
-      ) : (
+        <Participants />
+      </>
+    );
+  } else if (regStatus !== "INVITED_IN_PROGRESS" && props.invited) {
+    return (
+      <>
+        {props.lang === "en" ? (
+          <p>
+            Invitation sign up is closed. Use{" "}
+            <a href="/en#ilmo">general sign up</a>.
+          </p>
+        ) : (
+          <p>
+            Kutsuvierasilmoittautuminen on päättynyt. Ilmoittaudu{" "}
+            <a href="/#ilmo">yleisessä ilmoittautumisessa</a>.
+          </p>
+        )}
+        <Participants />
+      </>
+    );
+  } else if (regStatus === "ENDED") {
+    return (
+      <>
+        {props.lang === "en" ? (
+          <p>Sign up has ended.</p>
+        ) : (
+          <p>Ilmoittautuminen on päättnyt.</p>
+        )}
+        <Participants />
+      </>
+    );
+  } else {
+    return (
+      <>
         <div className="ilmoformi">
+          {regStatus === "RESERVE_IN_PROGRESS" ? (
+            <p>
+              {props.lang === "en"
+                ? "Registration is full. You can still sign up for a reserve seat."
+                : "Ilmoittauminen on täynnä. Voit silti ilmoittautua varasijalle."}
+            </p>
+          ) : null}
           <form
             onSubmit={handleSubmit(async (data) => await onSubmit(data))}
             name="ilmoformi"
@@ -703,18 +761,9 @@ export default function Ilmoformi(props) {
             </div>
           </form>
         </div>
-      )}
 
-      {props.fitting ? (
-        <div className="participants">
-          <DataTable
-            columns={columns}
-            data={participants}
-            theme="dark"
-            pagination
-          />
-        </div>
-      ) : null}
-    </>
-  );
+        <Participants />
+      </>
+    );
+  }
 }

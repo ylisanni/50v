@@ -63,8 +63,8 @@ class Ilmo extends Component {
                     they cost 20 euros.
                   </p>
                   <p>
-                    You can also attend the Annual Ball as a volunteer.{" "}
-                    <br/><a
+                    You can also attend the Annual Ball as a volunteer. <br />
+                    <a
                       href="https://nakit.asteriski.fi"
                       target="_blank"
                       rel="noreferrer"
@@ -92,7 +92,7 @@ class Ilmo extends Component {
                   </p>
                   <p>
                     Halutessasi voit osallistua vuosijuhlille myös nakkien
-                    muodossa.{" "}<br/>
+                    muodossa. <br />
                     <a
                       href="https://nakit.asteriski.fi"
                       target="_blank"
@@ -106,7 +106,11 @@ class Ilmo extends Component {
               )}
             </div>
             <div className="row">
-              <Countdown date={this.state.startDate} renderer={renderer} />
+              <Countdown
+                date={this.state.startDate}
+                renderer={renderer}
+                onComplete={() => window.location.reload(false)}
+              />
             </div>
           </section>
         )}

@@ -87,7 +87,7 @@ class Header extends Component {
               )
             ) : this.props.data.kutsuvieras ? (
               <li>
-                <Link to="/kutsuvieras/en" onClick={this.forceUpdate}>
+                <Link to="/kutsuvieras-en" onClick={this.forceUpdate}>
                   <Flags.GB title="In English" style={{ width: "18px" }} />
                 </Link>
               </li>

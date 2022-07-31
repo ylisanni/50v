@@ -24,8 +24,8 @@ class Menu extends Component {
                   roasted small potatoes, baked root vegetables, pickled mustard
                   seeds, vegetable chips
                 </p>
+                <h4>Fish</h4>
                 <p>
-                  <h4>Fish</h4>
                   <b>Blood orange salmon and citrus sauce</b>
                   <br /> roasted small potatoes, baked root vegetables, pickled
                   mustard seeds, vegetable chips
