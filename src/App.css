@@ -1,210 +1,210 @@
 @import url("https://fonts.googleapis.com/css?family=Major+Mono+Display");
 
 .wp-img {
-    margin: auto auto;
-    height: 100% !important;
+  margin: auto auto;
+  height: 100% !important;
 }
 
 @font-face {
-    font-family: carneval;
-    src: url("assets/carneval.ttf");
+  font-family: carneval;
+  src: url("assets/carneval.ttf");
 }
 
 .wp-img img {
-    border-bottom: 1px solid var(--gray-darker);
-    border-radius: 50%;
-    display: block;
-    margin: auto;
-    width: auto;
-    height: 120px;
-    object-fit: cover;
-    padding: 0 !important;
-    object-position: center;
+  border-bottom: 1px solid var(--gray-darker);
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  width: auto;
+  height: 120px;
+  object-fit: cover;
+  padding: 0 !important;
+  object-position: center;
 }
 
 .rotating-logo {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.5s;
-    transition-duration: 0.5s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
 }
 
 .rotating-logo:hover,
 .rotating-logo:focus,
 .rotating-logo:active {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .main-logo {
-    margin: 0 auto;
-    padding-top: 4rem;
-    object-fit: contain;
+  margin: 0 auto;
+  padding-top: 4rem;
+  object-fit: contain;
 }
 
 .laskuri {
-    font-family: "Major Mono Display", monospace;
-    text-align: center;
+  font-family: "Major Mono Display", monospace;
+  text-align: center;
 }
 
 .laskuri-item {
-    font-weight: bold;
-    font-size: 1.5rem;
-    border-right: 1px solid;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border-right: 1px solid;
 }
 
 .laskuri-item-last {
-    padding-right: 0;
-    border-right: 0;
+  padding-right: 0;
+  border-right: 0;
 }
 
 .laskuri-amount {
-    color: var(--gold);
+  color: var(--gold);
 }
 
 .sillisTop {
-    overflow: hidden;
-    background-image: url("assets/sirkus2.webp");
-    height: 120px;
-    filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
-    -webkit-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
-    -moz-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
+  overflow: hidden;
+  background-image: url("assets/sirkus2.webp");
+  height: 120px;
+  filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
+  -webkit-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
+  -moz-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
 }
 
 .sillisBottom {
-    overflow: hidden;
-    background-image: url("assets/sirkus.webp");
-    height: 120px;
-    filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
-    -webkit-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
-    -moz-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
+  overflow: hidden;
+  background-image: url("assets/sirkus.webp");
+  height: 120px;
+  filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
+  -webkit-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
+  -moz-filter: sepia(61%) brightness(92%) hue-rotate(345deg) saturate(237%);
 }
 
 #sponsors {
-    background-color: var(--gray);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    text-align: center;
+  background-color: var(--gray);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
 }
 
 #sponsors .sponsors-flex {
-    display: flex;
-    align-content: space-around;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 #sponsors h2 {
-    color: var(--green);
+  color: var(--green);
 }
 
 #sponsors .sponsors-flex a {
-    display: flex;
-    width: 27rem;
-    height: 12rem;
-    padding: 1rem 0;
+  display: flex;
+  width: 27rem;
+  height: 12rem;
+  padding: 1rem 0;
 }
 
 #sponsors .sponsors-flex img {
-    width: 100%;
-    object-fit: contain;
-    padding: 1rem 0;
+  width: 100%;
+  object-fit: contain;
+  padding: 1rem 0;
 }
 
 @media only screen and (min-width: 720px) {
-    .sponsors-flex img {
-        filter: grayscale(1);
-        transition: all .3s ease-in-out;
-    }
+  .sponsors-flex img {
+    filter: grayscale(1);
+    transition: all 0.3s ease-in-out;
+  }
 
-    .sponsors-flex img:hover {
-        filter: grayscale(0);
-        transform: scale(1.1);
-    }
+  .sponsors-flex img:hover {
+    filter: grayscale(0);
+    transform: scale(1.1);
+  }
 }
 
 header a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .ohjelma-sponsor-images {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    align-items: end;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: end;
 }
 
 .ohjelma-sponsor-text {
-    color: var(--gray);
+  color: var(--gray);
 }
 
 .ohjelma-sponsor {
-    display: flex;
-    width: 21rem;
-    padding: 1rem 0;
-    height: 10rem;
+  display: flex;
+  width: 21rem;
+  padding: 1rem 0;
+  height: 10rem;
 }
 
-.main-sponsor{
-    height: 13rem;
+.main-sponsor {
+  height: 13rem;
 }
 
 .ohjelma-sponsor img {
-    width: 100%;
-    object-fit: contain;
-    padding: 1rem 0;
-    filter: brightness(0) invert(1);
-    object-position: left;
-    transition: all .3s ease-in-out;
+  width: 100%;
+  object-fit: contain;
+  padding: 1rem 0;
+  filter: brightness(0) invert(1);
+  object-position: left;
+  transition: all 0.3s ease-in-out;
 }
 
 .ohjelma-sponsor img:hover {
-    scale: 1.1;
+  scale: 1.1;
 }
 
 .ohjelma {
-    margin: 4rem 0;
+  margin: 4rem 0;
 }
 
 .ohjelma:first-of-type {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 .ohjelma:last-of-type {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .ilmoformi {
-    margin-left: 1rem;
-    margin-right: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .error {
-    color: red;
+  color: red;
 }
 
 .apiErrors {
-    color: red;
+  color: red;
 }
 
 .posted {
-    border: 1px solid #35b233;
-    background-color: #333;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 2.5rem;
+  border: 1px solid #35b233;
+  background-color: #333;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 .posted p {
-    color: #35b233;
-    margin: 1rem;
+  color: #35b233;
+  margin: 1rem;
 }
