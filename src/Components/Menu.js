@@ -5,17 +5,18 @@ class Menu extends Component {
     return (
       <section id="menu">
         <div className="row">
-          <div className="twelve columns">
-            {this.props.data.lang === "en" ? (
-              <>
-                <h2>Menu</h2>
+          {this.props.data.lang === "en" ? (
+            <>
+              <h2>Menu</h2>
+              <div className="four columns">
                 <h3>Starter</h3>
                 <p>
                   <b>Jerusalem artichoke soup</b>
                   <br />
                   Herbal oil, archipelago bread, garlic spread
                 </p>
-
+              </div>
+              <div className="four columns">
                 <h3>Main course</h3>
                 <h4>Meat</h4>
                 <p>
@@ -36,23 +37,28 @@ class Menu extends Component {
                   <br /> country bread, baked root vegetables, pickled mustard
                   seeds, vegetable chips
                 </p>
-
+              </div>
+              <div className="four columns">
                 <h3>Dessert</h3>
                 <p>
                   <b>Pineapple-passion chocolate cake</b>
                   <br /> coffee/tea
                 </p>
-              </>
-            ) : (
-              <>
-                <h2>Menu</h2>
+              </div>
+            </>
+          ) : (
+            <>
+              <h2>Menu</h2>
+              <div className="four columns">
                 <h3>Alkuruoka</h3>
                 <p>
                   <b>Maa-artisokkakeitto</b>
                   <br />
                   yrttiöljyä, saaristolaisleipää, valkosipulilevite
                 </p>
+              </div>
 
+              <div className="four columns">
                 <h3>Pääruoka</h3>
                 <h4>Liha</h4>
                 <p>
@@ -74,15 +80,17 @@ class Menu extends Component {
                   maalaisleipää, uunijuurekset, pikkelöidyt sinapinsiemenet,
                   kasvissipsit
                 </p>
+              </div>
 
+              <div className="four columns">
                 <h3>Jälkiruoka</h3>
                 <p>
                   <b>Ananas-passionsuklaakakkua</b>
                   <br /> kahvi/tee
                 </p>
-              </>
-            )}
-          </div>
+              </div>
+            </>
+          )}
         </div>
       </section>
     );

@@ -16,6 +16,7 @@
     --greenish-gray:#888;
     --ohjelma-bg: #010101;
     --etiketti-bg: #212121;
+    --tarjoukset-bg: #2d2d2d;
     --sillis-bg: #ffca00;
     --sillis-header: #ff0f2e;
 
@@ -99,13 +100,13 @@ header .scrolldown a:hover {
     color: var(--green);
 }
 
-#etiketti, #ohjelma, #tietoa, #uutiset, #sillis, #ilmo, #sponsors{
+#etiketti, #ohjelma, #tietoa, #uutiset, #sillis, #ilmo, #sponsors, #tarjoukset{
     height: max-content;
     padding: var(--section-padding);
     overflow: hidden;
 }
 
-#etiketti p, #ohjelma p, #tietoa p, #uutiset p, #sillis p {
+#etiketti p, #ohjelma p, #tietoa p, #uutiset p, #sillis p, #tarjoukset p {
     text-align: justify;
 }
 
@@ -378,6 +379,23 @@ ul#nav li.current a {
 }
 
 #etiketti h3 {
+    font-family: "librebaskerville-italic", serif;
+    color: var(--gold);
+}
+
+/* ------------------------------------------------------------------ */
+/* Tarjoukset
+/* ------------------------------------------------------------------ */
+
+#tarjoukset {
+    background: var(--tarjoukset-bg);
+}
+
+#tarjoukset h2 {
+    color: var(--white);
+}
+
+#tarjoukset h3 {
     font-family: "librebaskerville-italic", serif;
     color: var(--gold);
 }

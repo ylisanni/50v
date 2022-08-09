@@ -8,6 +8,7 @@ import Ohjelma from "./Components/Ohjelma";
 import Uutiset from "./Components/Uutiset";
 import Etiketti from "./Components/Etiketti";
 import Menu from "./Components/Menu";
+import Tarjoukset from "./Components/Tarjoukset";
 import Sillis from "./Components/Sillis";
 import Ilmo from "./Components/Ilmo";
 import Sponsors from "./Components/Sponsors";
@@ -31,6 +32,7 @@ class App extends Component {
         <Uutiset data={this.state} />
         <Ohjelma data={this.state} />
         <Menu data={this.state} />
+        <Tarjoukset data={this.state} />
         <Etiketti data={this.state} />
         <Sillis data={this.state} />
         <Ilmo data={this.state} />
