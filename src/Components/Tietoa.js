@@ -29,6 +29,9 @@ class Tietoa extends Component {
                   On the following morning on Sunday 2nd of October 2022 the
                   herring breakfast will take place in a secret location.
                 </p>
+                   <p>
+                  The annual ball is organized in accessible premises. Afterparty may include flashing lights.
+                </p>
                 <p>
                   The dress code at the annual ball is a white tie or dark
                   lounge suit for men and an evening gown for women as well as
@@ -51,6 +54,9 @@ class Tietoa extends Component {
                   Silliaamiaista eli sillistä nautitaan juhlien seuraavana
                   päivänä sunnuntaina 2. lokakuuta. Jatkojen tapaan myös sillis
                   järjestetään salaisessa paikassa.
+                </p>
+                  <p>
+                  Vuosijuhlat järjestetään esteettömissä tiloissa. Jatkoilla saatetaan käyttää vilkkuvia valoja.
                 </p>
                 <p>
                   Vuosijuhlien pukukoodina toimii juhlapuku tai tumma puku sekä
