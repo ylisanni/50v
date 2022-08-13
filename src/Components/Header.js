@@ -3,12 +3,22 @@ import Fade from "react-reveal";
 import ParticlesBg from "particles-bg";
 import Flags from "country-flag-icons/react/3x2";
 import { Link } from "react-router-dom";
+import MiniIlmo from "./MiniIlmo";
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      lang: props.lang,
+      kutsuvieras: props.kutsuvieras,
+    };
+  }
   render() {
     return (
       <header id="home">
         <ParticlesBg color="#fff" type="lines" bg={true} />
+        <a id="ilmo-banner" className="smoothscroll" href="#ilmo"><MiniIlmo data={this.state} /></a>
+        <div id="ilmo-banner-background"><MiniIlmo data={this.state} /></div>
         <nav id="nav-wrap">
           <a className="mobile-btn" id="mobile-toggle" title="Show navigation">
             Show navigation
@@ -17,10 +27,9 @@ class Header extends Component {
           <ul id="nav" className="nav">
             <li className="current">
               <a className="smoothscroll" href="#home">
-                {this.props.data.lang === "en" ? "Top" : "Alkuun"}
+                <i className="fa fa-home"></i>
               </a>
             </li>
-
             <li>
               <a className="smoothscroll" href="#tietoa">
                 {this.props.data.lang === "en" ? "About" : "Tietoa"}
@@ -36,6 +45,12 @@ class Header extends Component {
             <li>
               <a className="smoothscroll" href="#ohjelma">
                 {this.props.data.lang === "en" ? "Program" : "Ohjelma"}
+              </a>
+            </li>
+
+            <li>
+              <a className="smoothscroll" href="#menu">
+                {this.props.data.lang === "en" ? "Offers" : "Menu"}
               </a>
             </li>
 

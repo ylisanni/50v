@@ -60,7 +60,7 @@ class Uutiset extends Component {
           <div className="wp-news">
             {this.state.news.map((post, index) => (
               <div className="row" key={index}>
-                <div className="wp-img columns two">
+                <div className="wp-img columns three">
                   {post["_embedded"]["wp:featuredmedia"] ? (
                     <img
                       alt="Post"
@@ -68,7 +68,7 @@ class Uutiset extends Component {
                     ></img>
                   ) : null}
                 </div>
-                <div className="main-col columns ten">
+                <div className="main-col columns nine">
                   <div className="row item">
                     <div className="twelve columns">
                       <h3

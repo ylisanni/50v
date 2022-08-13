@@ -10,17 +10,7 @@
   src: url("assets/carneval.ttf");
 }
 
-.wp-img img {
-  border-bottom: 1px solid var(--gray-darker);
-  border-radius: 50%;
-  display: block;
-  margin: auto;
-  width: auto;
-  height: 120px;
-  object-fit: cover;
-  padding: 0 !important;
-  object-position: center;
-}
+
 
 .rotating-logo {
   display: inline-block;
@@ -141,6 +131,8 @@ header a {
   flex-wrap: wrap;
   width: 100%;
   align-items: end;
+  justify-content: space-between;
+  max-width: 500px;
 }
 
 .ohjelma-sponsor-text {
