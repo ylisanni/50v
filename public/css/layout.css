@@ -495,22 +495,6 @@ ul#nav li.current a {
     color: var(--gold);
 }
 
-/* ------------------------------------------------------------------ */
-/* Tarjoukset
-/* ------------------------------------------------------------------ */
-
-#tarjoukset {
-    background: var(--tarjoukset-bg);
-}
-
-#tarjoukset h2 {
-    color: var(--white);
-}
-
-#tarjoukset h3 {
-    font-family: "librebaskerville-italic", serif;
-    color: var(--gold);
-}
 
 /* Flex Slider
 /* ------------------------------------------------------------------ */
@@ -986,4 +970,68 @@ footer .copyright:hover li img, footer .copyright:focus, li img footer .copyrigh
         margin: 20px;
         color: var(--gold);
     }
+}
+
+
+/* ------------------------------------------------------------------ */
+/* Tarjoukset
+/* ------------------------------------------------------------------ */
+
+#tarjoukset {
+    background: var(--tarjoukset-bg);
+}
+
+#tarjoukset h2 {
+    color: var(--white);
+}
+
+#tarjoukset h3 {
+    color: var(--gold);
+}
+
+#tarjoukset .fa-asterisk{
+    display: flex;
+    justify-content: center;
+    transform: rotate(90deg);
+    margin: 20px;
+    color: var(--white);
+}
+
+
+#tarjoukset .tarjoukset-images {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: end;
+    justify-content: space-between;
+    max-width: 200px;
+}
+
+#tarjoukset .tarjoukset-teksti-osio {
+    color: var(--gray);
+}
+
+#tarjoukset .tarjoukset-teksti-osio a {
+    color: var(--gold);
+    text-decoration: none;
+}
+
+#tarjoukset .tarjoukset-teksti-osio a:hover {
+    text-decoration: underline;
+}
+
+
+#tarjoukset .tarjoukset-images  img {
+    width: 100%;
+    object-fit: contain;
+    padding: 1rem 0;
+    filter: brightness(0) invert(1);
+    object-position: left;
+    transition: all 0.3s ease-in-out;
+}
+
+#tarjoukset .tarjoukset-images  img:hover {
+    scale: 1.1;
 }
