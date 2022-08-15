@@ -37,20 +37,21 @@ class Tarjoukset extends Component {
                                     <h3>
                                         Hiushuone Kerho
                                     </h3>
-                                    <p><i>Hiushuone Kerho Rennolla otteella kauniita hiuksia - hyvää palvelua ja hyvää
-                                        kahvia unohtamatta.</i></p>
+                                    <p><i>-- Hiushuone Kerho beautiful hair with relaxed feel - Good service and excellent
+                                        coffee included. --</i></p>
                                     <p>
-                                        Hiushuone Kerho (Humalistonkatu 13, 20100 Turku) tarjoaa vuosijuhla päivänä
-                                        1.10. juhlakampauksia hintaan 65,00€. Varaathan aikasi sähköpostilla <a
+                                        Hiushuone Kerho (Humalistonkatu 13, 20100 Turku) offers party hairstyles for the annual party on 
+                                        October 1st for 65.00 euros. Book your appointment by email <a
                                         href="mailto:kerho@hiushuonekerho.fi">kerho@hiushuonekerho.fi</a>
+                                        Remember to mention the Asteriski anniversary in the email.
                                     </p>
                                     <p>
-                                        Hiushuone Kerho tarjoaa lisäksi -10% muista kampaamo- ja parturipalveluistaan
-                                        koko syyskuun ajan. Alennuksen saat käyttöösi varauksen yhteydessä
-                                        kirjoittamalla lisätietokenttään “Vuosijuhla Asteriski”. Alennus koskee
-                                        kampaajia Maria, Niina, Katariina ja Kirsi. Varaukset <a
+                                        Hiushuone Kerho also offers -10% off its other hair salon and barber services throughout September. You
+                                        can use the discount when booking by writing "Vuosijuhla Asteriski" in the additional information field. The
+                                        discount applies to hairdressers Maria, Niina, Katariina and Kirsi.
+                                        Reservations via online appointment <a
                                         href="https://booksalon.fi/hiushuone-kerho/">nettiajanvarauksesta</a>
-                                        , puhelimitse tai sähköpostitse <a
+                                        , 050 379 0369 or email <a
                                         href="mailto:kerho@hiushuonekerho.fi">kerho@hiushuonekerho.fi</a>.</p>
                                 </div>
                                 <div className="tarjoukset-kuva-osio">
@@ -86,8 +87,9 @@ class Tarjoukset extends Component {
                                         kahvia unohtamatta. --</i></p>
                                     <p>
                                         Hiushuone Kerho (Humalistonkatu 13, 20100 Turku) tarjoaa vuosijuhla päivänä
-                                        1.10. juhlakampauksia hintaan 65,00€. Varaathan aikasi sähköpostilla <a
-                                        href="mailto:kerho@hiushuonekerho.fi">kerho@hiushuonekerho.fi</a>
+                                        1.10. juhlakampauksia hintaan 65,00€. Varaa aikasi sähköpostilla <a
+                                        href="mailto:kerho@hiushuonekerho.fi">kerho@hiushuonekerho.fi</a> Muista mainita Asteriskin 
+                                        vuosijuhlat sähköpostissa.
                                     </p>
                                     <p>
                                         Hiushuone Kerho tarjoaa lisäksi -10% muista kampaamo- ja parturipalveluistaan
@@ -95,7 +97,7 @@ class Tarjoukset extends Component {
                                         kirjoittamalla lisätietokenttään “Vuosijuhla Asteriski”. Alennus koskee
                                         kampaajia Maria, Niina, Katariina ja Kirsi. Varaukset <a
                                         href="https://booksalon.fi/hiushuone-kerho/">nettiajanvarauksesta</a>
-                                        , puhelimitse tai sähköpostitse <a
+                                        , 050 379 0369 tai sähköpostitse <a
                                         href="mailto:kerho@hiushuonekerho.fi">kerho@hiushuonekerho.fi</a>.</p>
                                 </div>
                                 <div className="tarjoukset-kuva-osio">
