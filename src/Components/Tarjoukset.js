@@ -67,6 +67,45 @@ class Tarjoukset extends Component {
                     ></iframe>
                   </div>
                 </div>
+                <div className="tarjoukset-teksti-osio">
+                  <h4>Academia</h4>
+                  <p>
+                    <i>
+                      Dear annual ball guests!
+                    </i>
+                  </p>
+                  <p>
+                    As a partner of Asteriski's annual ball Academia offers all attendees of the celebration their services at a reduced price.
+                    From Academia you can rent high quality dress suits and patent leather court shoes for the ball.
+                    Renting a dress suit costs 125 € (normally 170 €) and the shoes 25-40 € (normally 35-45 €).
+                  </p>
+                  <p>
+                    You can also buy a new or used dress suit for yourself at a discount of 20%. The offer is applicable to all dress suit sets available starting from 350€.
+                  </p>
+                  <p>
+                    The fittings for dress suits and shoes will be arranged for all wanting to rent or buy one.
+                    You can also order a dress suit based on your measurements without fitting if you like (more information in the form).
+                    The deadline for registering to the fitting is 4.9.
+                    After this the fittings will be scheduled.
+                    Register for the dress suit fitting through this {" "}
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxX3egU64ouFUAZ1ONlC1q9LIdxM5jTAvLdHeHGQQZ2nC_Lw/viewform?usp=pp_url">
+                      link
+                    </a>
+                    .
+                  </p>
+                </div>
+                <div className="tarjoukset-kuva-osio">
+                  <div className="tarjoukset-images">
+                    <a
+                      className="tarjoukset-sponsor"
+                      rel="noreferrer"
+                      href="https://www.pukuvuokraamoacademia.fi/"
+                      target="_blank"
+                    >
+                      <img className="tarjoukset-images-alt" alt="" src="images/academia.jpg" />
+                    </a>
+                  </div>
+                </div>
               </>
             ) : (
               <>
@@ -113,6 +152,48 @@ class Tarjoukset extends Component {
                       target="_blank"
                     >
                       <img alt="" src="images/offers/webp/kerho.webp" />
+                    </a>
+                  </div>
+                </div>
+                <div className="tarjoukset-teksti-osio">
+                  <h4>Academia</h4>
+                  <p>
+                    <i>
+                      Arvon vuosijuhlaväki!
+                    </i>
+                  </p>
+                  <p>
+                  Academia toimii vuosijuhlien yhteistyökumppanina ja tarjoaa kaikille juhlaan osallistuville laadukkaan frakin vuokrauksen 125 euron hintaan (norm. 170 €),
+                  sekä lakerikenkien vuokrauksen hintaan 25-40 € (norm. 35-45 €).
+                  </p>
+                  <p>
+                  Yhteistyötarjouksena on myös mahdollista ostaa frakki omaksi,
+                  uutena tai käytettynä, -20%:n alennuksella.
+                  Tarjous koskee kaikkia eri hintaisia settejä, edullisimmat alkaen 350 €. 
+                  </p>
+                  <p>
+                  Frakkien sovitukset järjestetään hyvissä ajoin ennen vuosijuhlia,
+                  tarkemmasta ajankohdasta infotaan lähempänä.
+                  Frakin voi tilata myös mittojen mukaan toimitettuna ilman sovitusta.
+                  </p>
+                  <p>
+                  Sovitukseen ilmoittautuminen sulkeutuu 4.9.
+                  Pääset ilmoittautumaan sovituspäivään tästä {" "}
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxX3egU64ouFUAZ1ONlC1q9LIdxM5jTAvLdHeHGQQZ2nC_Lw/viewform?usp=pp_url">
+                      linkistä
+                    </a>
+                    .
+                  </p>
+                </div>
+                <div className="tarjoukset-kuva-osio">
+                  <div className="tarjoukset-images">
+                    <a
+                      className="tarjoukset-sponsor"
+                      rel="noreferrer"
+                      href="https://www.pukuvuokraamoacademia.fi/"
+                      target="_blank"
+                    >
+                      <img className="tarjoukset-images-alt" alt="" src="images/academia.jpg" />
                     </a>
                   </div>
                 </div>

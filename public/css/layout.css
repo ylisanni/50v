@@ -988,6 +988,11 @@ footer .copyright:hover li img, footer .copyright:focus, li img footer .copyrigh
 #tarjoukset h3 {
     color: var(--gold);
 }
+#tarjoukset h4{
+    color: var(--gold);
+    padding-top: 5vh;
+}
+
 
 #tarjoukset .fa-asterisk{
     display: flex;
@@ -1028,6 +1033,15 @@ footer .copyright:hover li img, footer .copyright:focus, li img footer .copyrigh
     object-fit: contain;
     padding: 1rem 0;
     filter: brightness(0) invert(1);
+    object-position: left;
+    transition: all 0.3s ease-in-out;
+}
+
+#tarjoukset .tarjoukset-images-alt {
+    width: 100%;
+    object-fit: contain;
+    filter: none !important;
+    padding: 1rem 0;
     object-position: left;
     transition: all 0.3s ease-in-out;
 }
