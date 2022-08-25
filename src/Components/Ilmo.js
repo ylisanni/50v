@@ -73,6 +73,10 @@ class Ilmo extends Component {
                     </a>
                     .
                   </p>
+                  <p style={{ color: "var(--gold)", fontWeight:"bolder"}}>
+                    NB! Sign up closes at 23:59 31.8.
+                  </p>
+                  <i className="fa fa-asterisk" style={{color:"var(--white)"}}></i>
                 </>
               ) : (
                 <>
@@ -94,14 +98,18 @@ class Ilmo extends Component {
                     Halutessasi voit osallistua vuosijuhlille myös nakkien
                     muodossa. <br />
                     <a
-                      href="https://nakit.asteriski.fi"
-                      target="_blank"
-                      rel="noreferrer"
+                        href="https://nakit.asteriski.fi"
+                        target="_blank"
+                        rel="noreferrer"
                     >
                       Lisätietoja nakittautumisesta
                     </a>
                     .
                   </p>
+                  <p style={{ color: "var(--gold)", fontWeight:"bolder"}}>
+                    Huom! Ilmoittautuminen sulkeutuu 23:59 31.8.
+                  </p>
+                  <i className="fa fa-asterisk" style={{color:"var(--white)"}}></i>
                 </>
               )}
             </div>

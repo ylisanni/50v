@@ -50,6 +50,11 @@ class Footer extends Component {
         sponsor_url: "https://tivia.fi/",
         sponsor_image_url: "tivia.webp",
       },
+      {
+        sponsor_name: "TEK",
+        sponsor_url: "https://www.tek.fi/",
+        sponsor_image_url: "tek.webp",
+      },
     ];
     sponsors.sort(() => Math.random() - 0.5);
 

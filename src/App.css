@@ -164,7 +164,7 @@ header a {
 }
 
 .ohjelma {
-  margin: 4rem 0;
+  margin: 8rem 0;
 }
 
 .ohjelma:first-of-type {
@@ -199,4 +199,22 @@ header a {
 .posted p {
   color: #35b233;
   margin: 1rem;
+}
+
+.viikko-ohjelma{
+
+}
+.paiva-lista{
+  margin-left: 0;
+  font: 1.6rem/3rem 'opensans-regular', sans-serif;
+}
+
+.paiva-lista .otsikko{
+  font-weight: 600;
+  color: var(--gold);
+  margin-top: 2rem;
+}
+
+.paiva-lista .paiva-ohjelma-aika{
+  margin-bottom: 2rem;
 }
