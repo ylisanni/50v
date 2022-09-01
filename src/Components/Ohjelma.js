@@ -126,9 +126,8 @@ class Ohjelma extends Component {
                                             and a towel.
                                         </p>
                                         <p>
-                                            We will move to Sillis by bus on Sunday morning. The exact
-                                            time and location for the departure will be released
-                                            later. Be on time!
+                                            We will move to Sillis by bus on Sunday morning. The buses to sillis leave at 11:00 and 12:00 
+                                            from Proffan Kellari. Be on time!
                                         </p>
                                     </div>
                                     <div className="ohjelma-sponsori-osio">
@@ -276,8 +275,8 @@ class Ohjelma extends Component {
                                         </p>
                                         <p>
                                             Sillikselle kuljemme yhteisellä bussikuljetuksella
-                                            sunnuntaina. Tarkempi lähtöaika ja paikka ilmoitetaan
-                                            myöhemmin. Ole ajoissa paikalla sillä bussit ei odota
+                                            sunnuntaina. Bussit sillikselle lähtevät kello 11:00 ja 12:00 Proffan Kellarin edestä.
+                                            Ole ajoissa paikalla sillä bussit ei odota
                                             myöhästelijöitä! Sillistä varten kannattaa varata rento
                                             asu.
                                         </p>
