@@ -74,7 +74,7 @@ class Ilmo extends Component {
                     .
                   </p>
                   <p style={{ color: "var(--gold)", fontWeight:"bolder"}}>
-                    NB! Sign up closes at 23:59 31.8.
+                    The sign up has ended. If you have any questions, please contact sakakos@utu.fi.
                   </p>
                   <i className="fa fa-asterisk" style={{color:"var(--white)"}}></i>
                 </>
@@ -107,7 +107,7 @@ class Ilmo extends Component {
                     .
                   </p>
                   <p style={{ color: "var(--gold)", fontWeight:"bolder"}}>
-                    Huom! Ilmoittautuminen sulkeutuu 23:59 31.8.
+                    Ilmoittautuminen on nyt päättynyt. Mahdolliset kysymykset voi laittaa osoitteeseen sakakos@utu.fi.
                   </p>
                   <i className="fa fa-asterisk" style={{color:"var(--white)"}}></i>
                 </>
