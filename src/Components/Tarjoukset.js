@@ -94,8 +94,8 @@ class Tarjoukset extends Component {
                                             rent or buy one.
                                             You can also order a dress suit based on your measurements without fitting
                                             if you like (more information in the form).
-                                            The deadline for registering to the fitting is 4.9.
-                                            After this the fittings will be scheduled.
+                                            The deadline for registering to the fitting is 11.9.
+                                            After this there will be a fitting time scheduled for you on 14.9.
                                             Register for the dress suit fitting through this {" "}
                                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxX3egU64ouFUAZ1ONlC1q9LIdxM5jTAvLdHeHGQQZ2nC_Lw/viewform?usp=pp_url">
                                                 link
@@ -194,7 +194,8 @@ class Tarjoukset extends Component {
                                             Frakin voi tilata myös mittojen mukaan toimitettuna ilman sovitusta.
                                         </p>
                                         <p>
-                                            Sovitukseen ilmoittautuminen sulkeutuu 4.9.
+                                            Sovitukseen ilmoittautuminen sulkeutuu 11.9.
+                                            Sovitukset tapahtuvat alustavasti 14.9.
                                             Pääset ilmoittautumaan sovituspäivään tästä {" "}
                                             <a href="https://docs.google.com/forms/d/e/1FAIpQLSdxX3egU64ouFUAZ1ONlC1q9LIdxM5jTAvLdHeHGQQZ2nC_Lw/viewform?usp=pp_url">
                                                 linkistä
