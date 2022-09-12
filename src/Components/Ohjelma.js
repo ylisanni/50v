@@ -307,14 +307,12 @@ class Ohjelma extends Component {
                         <div className="three columns">
                             <div className="ohjelma">
                                 <div className="ohjelma-kuvaus-osio">
-                                    <h3>Vuosijuhlaviikon ohjelma</h3>
-                                    <p>Vuosijuhlaviikon ohjelma julkaistaan myöhemmin.</p>
-                                    {/**}
+                                    <h3>Vuosijuhlaviikon ohjelma</h3>'
                                     <ul className="viikko-ohjelma">
                                         <li className="paiva">
                                             <ul className="paiva-lista">
                                                 <li className="otsikko">Maanantai 26.9.</li>
-                                                <li className="paiva-ohjelma">Tanssiharkat</li>
+                                                <li className="paiva-ohjelma">Tanssiharjoitukset</li>
                                                 <li className="paiva-ohjelma-aika">18-20:30 @ Turku Sali</li>
                                             </ul>
                                         </li>
@@ -322,25 +320,26 @@ class Ohjelma extends Component {
                                             <ul className="paiva-lista">
                                                 <li className="otsikko">Tiistai 27.9.</li>
                                                 <li className="paiva-ohjelma">Nostalgiakierros</li>
-                                                <li className="paiva-ohjelma-aika">17-22 @ Lähtö Agoralta- Uusi S- ICT -Sotku - Proffa</li>
+                                                <li className="paiva-ohjelma-aika">16:30 @ Lähtö Agoralta</li>
                                             </ul>
                                         </li>
                                         <li className="paiva">
                                             <ul className="paiva-lista">
                                                 <li className="otsikko">Keskiviikko 28.9.</li>
                                                 <li className="paiva-ohjelma"> Vectorin vikat sitsit</li>
-                                                <li className="paiva-ohjelma-aika">18-22 @ Q-talo</li>
-                                                <li className="paiva-ohjelma"> Vectorin jäähyväisbileet</li>
-                                                <li className="paiva-ohjelma-aika">22-04 @ Q-talo</li>
+                                                <li className="paiva-ohjelma-aika">18 @ Q-talo</li>
+                                                <li className="paiva-ohjelma"> Vectorin vikat bileet</li>
+                                                <li className="paiva-ohjelma-aika">22 @ Q-talo</li>
                                             </ul>
                                         </li>
                                         <li className="paiva">
                                             <ul className="paiva-lista">
                                                 <li className="otsikko">Torstai 29.9.</li>
                                                 <li className="paiva-ohjelma">Vuosijuhlaseminaari</li>
-                                                <li className="paiva-ohjelma-aika">18-20 @ Proffa</li>
+                                                <li className="paiva-ohjelma-aika">18 @ Proffan Kellari</li>
                                             </ul>
                                         </li>
+                                      {/**}
                                         <li className="paiva">
                                             <ul className="paiva-lista">
                                                 <li className="otsikko">Perjantai 30.9.</li>
@@ -376,39 +375,39 @@ class Ohjelma extends Component {
                             <div className="ohjelma">
                                 <div className="ohjelma-kuvaus-osio">
                                     <h3>Schedule of the Annual Ball Week</h3>
-                                    <p>Schedule will be published later.</p>
-                                    {/**}
+                                    {/}
                                      <ul className="viikko-ohjelma">
                                          <li className="paiva">
                                              <ul className="paiva-lista">
-                                                 <li className="otsikko">Maanantai 26.9.</li>
-                                                 <li className="paiva-ohjelma">Tanssiharkat</li>
+                                                 <li className="otsikko">Monday 26.9.</li>
+                                                 <li className="paiva-ohjelma">Dance practice</li>
                                                  <li className="paiva-ohjelma-aika">18-20:30 @ Turku Sali</li>
                                              </ul>
                                          </li>
                                          <li className="paiva">
                                              <ul className="paiva-lista">
-                                                 <li className="otsikko">Tiistai 27.9.</li>
-                                                 <li className="paiva-ohjelma">Nostalgiakierros</li>
-                                                 <li className="paiva-ohjelma-aika">17-22 @ Lähtö Agoralta- Uusi S- ICT -Sotku - Proffa</li>
+                                                 <li className="otsikko">Tuesday 27.9.</li>
+                                                 <li className="paiva-ohjelma">Nostalgiaround</li>
+                                                 <li className="paiva-ohjelma-aika">16:30 @ Departure from the Agora </li>
                                              </ul>
                                          </li>
                                          <li className="paiva">
                                              <ul className="paiva-lista">
-                                                 <li className="otsikko">Keskiviikko 28.9.</li>
-                                                 <li className="paiva-ohjelma"> Vectorin vikat sitsit</li>
-                                                 <li className="paiva-ohjelma-aika">18-22 @ Q-talo</li>
-                                                 <li className="paiva-ohjelma"> Vectorin jäähyväisbileet</li>
-                                                 <li className="paiva-ohjelma-aika">22-04 @ Q-talo</li>
+                                                 <li className="otsikko">Wednesday 28.9.</li>
+                                                 <li className="paiva-ohjelma"> Vector's last sits</li>
+                                                 <li className="paiva-ohjelma-aika">18 @ Q-talo</li>
+                                                 <li className="paiva-ohjelma"> Vector's last party</li>
+                                                 <li className="paiva-ohjelma-aika">22 @ Q-talo</li>
                                              </ul>
                                          </li>
                                          <li className="paiva">
                                              <ul className="paiva-lista">
-                                                 <li className="otsikko">Torstai 29.9.</li>
-                                                 <li className="paiva-ohjelma">Vuosijuhlaseminaari</li>
-                                                 <li className="paiva-ohjelma-aika">18-20 @ Proffa</li>
+                                                 <li className="otsikko">Thursday 29.9.</li>
+                                                 <li className="paiva-ohjelma">Annual ball seminar</li>
+                                                 <li className="paiva-ohjelma-aika">18 @ Proffan Kellari</li>
                                              </ul>
                                          </li>
+                                           {/**}
                                          <li className="paiva">
                                              <ul className="paiva-lista">
                                                  <li className="otsikko">Perjantai 30.9.</li>
