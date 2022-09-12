@@ -347,8 +347,8 @@ class Ohjelma extends Component {
                                                 <li className="paiva-ohjelma-aika">yy @ yy</li>
                                             </ul>
                                         </li>
-                                    </ul>
                                     {*/}
+                                    </ul>
                                 </div>
                                 <div className="ohjelma-sponsori-osio">
                                     <h4 className="ohjelma-sponsor-text">
@@ -375,7 +375,6 @@ class Ohjelma extends Component {
                             <div className="ohjelma">
                                 <div className="ohjelma-kuvaus-osio">
                                     <h3>Schedule of the Annual Ball Week</h3>
-                                    {/}
                                      <ul className="viikko-ohjelma">
                                          <li className="paiva">
                                              <ul className="paiva-lista">
@@ -415,8 +414,8 @@ class Ohjelma extends Component {
                                                  <li className="paiva-ohjelma-aika">yy @ yy</li>
                                              </ul>
                                          </li>
-                                     </ul>
                                      {*/}
+                                     </ul>
                                 </div>
                                 <div className="ohjelma-sponsori-osio">
                                     <h4 className="ohjelma-sponsor-text">
