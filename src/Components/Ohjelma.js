@@ -333,14 +333,9 @@ class Ohjelma extends Component {
                         <li className="otsikko">Keskiviikko 28.9.</li>
                         <li className="paiva-ohjelma">
                           {" "}
-                          Vectorin vikat sitsit
+                          Toimistokiltiskäytävän yhteinen illanvietto
                         </li>
                         <li className="paiva-ohjelma-aika">18 @ Q-talo</li>
-                        <li className="paiva-ohjelma">
-                          {" "}
-                          Vectorin vikat bileet
-                        </li>
-                        <li className="paiva-ohjelma-aika">22 @ Q-talo</li>
                       </ul>
                     </li>
                     <li className="paiva">
@@ -410,10 +405,8 @@ class Ohjelma extends Component {
                     <li className="paiva">
                       <ul className="paiva-lista">
                         <li className="otsikko">Wednesday 28.9.</li>
-                        <li className="paiva-ohjelma"> Vector's last sits</li>
+                        <li className="paiva-ohjelma"> Office Hallway Hangout</li>
                         <li className="paiva-ohjelma-aika">18 @ Q-talo</li>
-                        <li className="paiva-ohjelma"> Vector's last party</li>
-                        <li className="paiva-ohjelma-aika">22 @ Q-talo</li>
                       </ul>
                     </li>
                     <li className="paiva">
